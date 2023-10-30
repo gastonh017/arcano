@@ -1,3 +1,9 @@
+/* colores */
+:root {
+  --amarillo: #ffd900aa
+}
+
+
 .main {
   display: flex;
   flex-direction: column;
