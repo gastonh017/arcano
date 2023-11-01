@@ -1,0 +1,40 @@
+.container {
+  background-color: #ffd900aa;
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  padding-left: 1rem;
+  font-size: .8rem;
+}
+
+.logoContainer {
+  padding: .5rem 2rem;
+  width: 100vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+@media(min-width: 576px) {
+  .logoContainer {
+    width: 50vw;
+  }
+}
+
+@media(min-width: 992px) {
+  .logoContainer {
+    width: 30vw;
+  }
+}

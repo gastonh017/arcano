@@ -1,0 +1,36 @@
+.container {
+  width: 100vw;
+  padding: 2rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center
+}
+
+.title,
+.description {
+  width: 80vw;
+  margin: 2rem;
+}
+
+.title {
+  font-size: 3rem;
+  padding-left: 3rem;
+  text-align: start;
+}
+
+.description {
+  font-size: 1rem;
+  padding-right: 3rem;
+  text-align: end;
+}
+
+.containerLogo{
+  width: 80vw;
+  padding-left: 3rem;
+}
+
+.logo {
+  margin: 0 2rem;
+  cursor: pointer;
+}
