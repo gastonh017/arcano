@@ -7,10 +7,6 @@ const pages = [
     route: "/",
   },
   {
-    label: "Mision",
-    route: "/mision",
-  },
-  {
     label: "Proposito",
     route: "/proposito",
   },
@@ -27,10 +23,10 @@ export function NavBar() {
   return (
     <header className= {styles.header}>
       <nav className={styles.nav}>
-        <ul>
+        <ul className={styles.ul}>
           {pages.map(({ label, route }) => (
-            <li key={route}>
-              <Link href={route}>{label}</Link>
+            <li key={route} >
+              <Link className={styles.links} href={route}>{label}</Link>
             </li>
           ))}
         </ul>
