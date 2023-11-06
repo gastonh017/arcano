@@ -1,0 +1,68 @@
+.fondo {
+  padding: 1rem;
+  padding-top: 6rem;
+  background-color: rgba(75, 67, 57, 0.699);
+  min-height: 70vh;
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.formulario {
+  width: 300px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario>label {
+  padding-top: 2rem;
+  font-size: 1.2rem;
+  color: rgb(235, 214, 255);
+}
+
+.formulario>input {
+  margin: 0.5rem 0 .25rem 0;
+  color: rgb(235, 214, 255);
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+  width: 300px;
+  padding: 8px;
+  border: none;
+  border-radius: 3px;
+}
+
+.formulario>div {
+  padding: 1.5rem 0;
+
+}
+
+.avatar{
+  margin-top: 2rem;
+  border-radius: 50%;
+}
+
+.submtibutton {
+  padding: .5rem 1.5rem;
+  margin: .5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: rgb(226, 198, 43);
+  border: none;
+  border-radius: 2rem;
+
+
+}
+
+.formulario>p {
+  color: tomato;
+}

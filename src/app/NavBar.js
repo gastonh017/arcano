@@ -18,6 +18,10 @@ const pages = [
     label: "Implementacion",
     route: "/implementacion",
   },
+  {
+    label: "Registrarse",
+    route: "/register",
+  },
 ];
 export function NavBar() {
   return (
