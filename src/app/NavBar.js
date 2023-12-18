@@ -20,7 +20,7 @@ const pages = [
   },
   {
     label: "Registrarse",
-    route: "/register",
+    route: "/auth/register",
   },
 ];
 export function NavBar() {

@@ -129,8 +129,8 @@ export default function Woman() {
         <input type="file" {...register('avatar')} />
 
         <div>
-          <input type="checkbox" {...register("newsletter")} />
-          <label htmlFor='newsletter'> Desea suscribirse a nuestros Newsletters</label>
+          <input type="checkbox" {...register("sendnewsletter")} />
+          <label htmlFor='sendnewsletter'> Desea suscribirse a nuestros Newsletters</label>
         </div>
 
         <button className={styles.submtibutton}>Enviar</button>
