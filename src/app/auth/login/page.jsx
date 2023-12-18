@@ -41,7 +41,7 @@ export default function UserLogin() {
     }
     else {
       Swal.close()
-      router.push('/about');
+      router.push('/');
       router.refresh();
     }
 

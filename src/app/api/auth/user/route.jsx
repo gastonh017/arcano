@@ -26,6 +26,7 @@ export async function GET(request) {
       username: user.username,
       email: user.email,
       company: user.company,
+      sendnewsletter: user.sendnewsletter,
       avatar: user.avatar
     }
     // console.log(userToResponse)
@@ -95,6 +96,7 @@ export async function PUT(request) {
     lastname: data.get('lastname'),
     username: data.get('username'),
     company: data.get('company'),
+    sendnewsletter: data.get('sendnewsletter') === "true" ? true : false,
     password: password,
     avatar: avatar
   }
