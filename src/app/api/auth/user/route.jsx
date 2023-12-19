@@ -8,7 +8,7 @@ import prisma from '@/libs/prisma';
 
 export async function GET(request) {
   const session = await getServerSession(authOptions);
-  console.log(session.user)
+  // console.log(session.user)
 
 
   try {
@@ -57,11 +57,11 @@ export async function PUT(request) {
   let avatar = '';
   if (image.name != undefined) {
     const extension = image.name.split('.');
-    const nombreImagen = new Date().getTime().toString() + '.' + extension[extension.length - 1].toLowerCase();
+    const nombreImagen = new Date().getTime().toString() + '_usr.' + extension[extension.length - 1].toLowerCase();
     const imageData = await image.arrayBuffer();
     const imageDataBuffer = Buffer.from(imageData);
-    const filePath = path.join(process.cwd(), 'public', 'images', 'products', nombreImagen);
-    avatar = path.join('/', 'images', 'products', nombreImagen);
+    const filePath = path.join(process.cwd(), 'public', 'images', 'users', nombreImagen);
+    avatar = path.join('/', 'images', 'users', nombreImagen);
     await writeFile(filePath, imageDataBuffer);
   } else {
     avatar = image;

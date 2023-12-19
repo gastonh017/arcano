@@ -52,7 +52,7 @@ export async function NavBar() {
         <ul className={styles.ul}>
           {pages.map(({ label, route }) => (
             <li key={route}>
-              <Link className={styles.links} href={route}>
+              <Link className={styles.link} href={route}>
                 {label}
               </Link>
             </li>
@@ -61,15 +61,15 @@ export async function NavBar() {
           {session && session.user ? (
             <>
               <li className={styles.logoUser}>
-                <Link href={`/auth/user`} className={styles.link}>
+                <Link href={`/auth/user`} className={styles.avatarContainer}>
                   <Images
                     src={session.user.image}
                     width={logoSize}
                     height={logoSize}
                     alt="logo"
-                    className=""
+                    className={styles.avatar}
                   />
-                  <span>Hola {session.user.name}</span>
+                  <span className={styles.link}>Hola {session.user.name}</span>
                 </Link>
               </li>
               <li>

@@ -79,6 +79,22 @@
   color: #54167d;
 }
 
+.avatarContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  text-decoration: inherit;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: auto;
+  margin-right: .25rem;
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+}
+
 .logout {
   border: none;
   border-radius: 0;

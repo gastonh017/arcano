@@ -44,7 +44,7 @@ export async function POST(request) {
 
     //hasheo del password
     const password = await bcrypt.hash(data.get('password'), 10);
-    console.log(password.length)
+    // console.log(password.length)
 
     //Genero el objeto para la DB
     const dataToDB = {
