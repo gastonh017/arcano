@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import './globals.css'
 import { NavBar } from "./NavBar";
+import Head from 'next/head'
 import Footer from '@/components/Footer/page';
 
 
@@ -14,6 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+          <Head>
+      <title> Arcano Ingenieria en Calidad</title>
+    </Head>
       <body>
         <NavBar />
         {children}
