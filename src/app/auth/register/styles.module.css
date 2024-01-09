@@ -26,12 +26,12 @@
 .formulario>label {
   padding-top: 2rem;
   font-size: 1.2rem;
-  color: rgb(235, 214, 255);
+  color: rgb(159, 194, 1);
 }
 
 .formulario>input {
   margin: 0.5rem 0 .25rem 0;
-  color: rgb(241, 241, 241);
+  color: rgb(52, 4, 208);
   font-size: 1rem;
   font-style: italic;
   font-weight: 600;

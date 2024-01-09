@@ -4,6 +4,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import Logout from "@/components/logout";
 import styles from "./navbar.module.css";
+import Dropdown from "@/components/NavBar2/NavBarItems";
 
 const pages = [
   {
@@ -11,16 +12,24 @@ const pages = [
     route: "/",
   },
   {
-    label: "Proposito",
-    route: "/proposito",
+    label: "Nosotros",
+    route: "/nosotros",
   },
   {
-    label: "Practicas",
-    route: "/practicas",
+    label: "Marco",
+    route: "/marco",
   },
   {
-    label: "Implementacion",
-    route: "/implementacion",
+    label: "Protagonistas",
+    route: "/marco/protagonistas",
+  },
+  {
+    label: "Dominios",
+    route: "/marco/dominios",
+  },
+  {
+    label: "Hacer",
+    route: "/marco/hacer",
   },
 ];
 
@@ -30,16 +39,24 @@ const authPages = [
     route: "/",
   },
   {
-    label: "Proposito",
-    route: "/proposito",
+    label: "Nosotros",
+    route: "/nosotros",
   },
   {
-    label: "Practicas",
-    route: "/practicas",
+    label: "Marco",
+    route: "/marco",
   },
   {
-    label: "Implementacion",
-    route: "/implementacion",
+    label: "Protagonistas",
+    route: "/marco/protagonistas",
+  },
+  {
+    label: "Dominios",
+    route: "/marco/dominios",
+  },
+  {
+    label: "Hacer",
+    route: "/marco/hacer",
   },
 ];
 export async function NavBar() {
@@ -48,16 +65,16 @@ export async function NavBar() {
 
   return (
     <header className={styles.header}>
-      <nav className={styles.nav}>
-        <Image src="/images/logo arcano.png" width={114} height={33} alt="logo"></Image>
+      <div className={styles.navBar}>
+        <Images src="/images/logo arcano.png" width={114} height={33} alt="logo"></Images>
         <ul className={styles.ul}>
-          {pages.map(({ label, route }) => (
-            <li key={route}>
-              <Link className={styles.link} href={route}>
-                {label}
-              </Link>
-            </li>
-          ))}
+          <li> 
+            <Link className={styles.link} href="/">Home</Link>
+          </li>
+          <li> 
+            <Link className={styles.link} href="/nosotros">Nosotros</Link>
+          </li>
+          <Dropdown />
 
           {session && session.user ? (
             <>
@@ -92,7 +109,8 @@ export async function NavBar() {
             </>
           )}
         </ul>
-      </nav>
+     
+      </div>
     </header>
   );
 }
