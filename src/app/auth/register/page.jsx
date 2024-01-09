@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
+import Swal from 'sweetalert2';
 import styles from '@/app/auth/register/styles.module.css';
 
 
@@ -33,14 +34,25 @@ export default function UserRegister() {
     formData.append("sendnewsletter", data.sendnewsletter);
     //console.log(formData)
 
+    Swal.fire({
+      title: "Comprobando usuario",
+      icon: "info",
+      showConfirmButton: false
+    });
+
     const res = await fetch('/api/auth/register', {
       method: 'POST',
       body: formData
     })
+    Swal.close()
 
     //const resJSON = await res.json();
     if (res.ok) {
       // router.push('/auth/login')
+      Swal.fire({
+        title: 'Usuario guardado correctamente',
+        icon: 'success'
+      })
       router.push('/')
     }
 

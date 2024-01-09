@@ -1,0 +1,37 @@
+.carrusel-container {
+  display: flex;
+  position: relative;
+  flex-flow: row nowrap;
+}
+
+
+.button-style {
+  font-size: 2rem;
+  font-weight: 600;
+  color: aliceblue;
+  background-color: transparent;
+  margin: 0 2rem;
+  border: none;
+  cursor: pointer;
+  transition: color 100ms ease;
+}
+
+.button-style:hover {
+  color: rgba(240, 189, 255, 0.726);
+}
+
+.btn-left {
+  text-shadow: -1px 3px 3px #444;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translatey(-70%);
+}
+
+.btn-right {
+  text-shadow: 1px 3px 3px #444;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translatey(-70%);
+}

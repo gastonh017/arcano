@@ -1,0 +1,18 @@
+.slide-container {
+  position: relative;
+}
+
+.slide-container>p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3rem;
+  text-shadow: 1px 3px 5px #333;
+  color: aliceblue;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.slide-img {
+  width: 100vw;
+}
