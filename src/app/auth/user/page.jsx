@@ -280,18 +280,22 @@ export default function UserRegister() {
               }
 
 
-              <label htmlFor='avatar' >Avatar</label>
-              <Image
-                src={file ? URL.createObjectURL(file) : user.avatar}
-                width={180}
-                height={180}
-                alt='avatar'
-                className={styles.imageProduct}
-              />
+              <label htmlFor='avatar' className={styles.contentImageAvatar}>
+                <p>Avatar</p>
+                <Image
+                  src={file ? URL.createObjectURL(file) : user.avatar}
+                  width={180}
+                  height={180}
+                  alt='avatar'
+                  className={styles.imageAvatar}
+                />
+              </label>
               {editUser &&
                 <>
                   <input
                     type="file"
+                    name='avatar'
+                    id='avatar'
                     {...register('avatar',
                       {
                         validate: (value) => {
@@ -314,6 +318,7 @@ export default function UserRegister() {
                     onChange={(e) => {
                       setFile(e.target.files[0]);
                     }}
+                    className={styles.inputFile}
                   />
                   {errors.avatar && <p>{errors.avatar.message}</p>}
                 </>

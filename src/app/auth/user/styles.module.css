@@ -51,13 +51,6 @@
   text-decoration: dashed;
 }
 
-.imageProduct {
-  border-radius: 5px;
-  margin: .5rem 0 1rem;
-  width: auto;
-  max-width: 25vw;
-}
-
 .buttonsContainer {
   margin: 1rem;
   display: flex;
@@ -120,4 +113,32 @@
   margin: .5rem 0;
   text-align: center;
   border-radius: 3px;
+}
+
+.contentImageAvatar {
+  text-align: center;
+  cursor: pointer;
+}
+
+.contentImageAvatar>p {
+  padding: 0;
+  margin-top: 0;
+}
+
+.imageAvatar {
+  border-radius: 5px;
+  margin: .5rem 0 1rem;
+  width: auto;
+  max-width: 25vw;
+  cursor: pointer;
+}
+
+.inputFile {
+  display: none;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
 }

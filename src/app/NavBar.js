@@ -49,7 +49,7 @@ export async function NavBar() {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <Image src="/images/logo arcano.png" width={114} height={33} alt="logo"></Image>
+        <Images src="/images/logo arcano.png" width={114} height={33} alt="logo"></Images>
         <ul className={styles.ul}>
           {pages.map(({ label, route }) => (
             <li key={route}>
