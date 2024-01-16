@@ -126,7 +126,7 @@
 }
 
 .imageAvatar {
-  border-radius: 5px;
+  border-radius: 50%;
   margin: .5rem 0 1rem;
   width: auto;
   max-width: 25vw;

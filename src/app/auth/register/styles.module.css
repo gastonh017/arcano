@@ -72,7 +72,30 @@
   border-radius: 3px;
 }
 
-.avatar {
-  margin-top: 1rem;
+.contentImageAvatar {
+  text-align: center;
+  cursor: pointer;
+}
+
+.contentImageAvatar>p {
+  padding: 0;
+  margin-top: 0;
+}
+
+.imageAvatar {
   border-radius: 50%;
+  margin: .5rem 0 1rem;
+  width: auto;
+  max-width: 25vw;
+  cursor: pointer;
+}
+
+.inputFile {
+  display: none;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
 }
