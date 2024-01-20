@@ -30,31 +30,26 @@ export default function Carrusel() {
   }, []);
 
   return (
-    <div className="carrusel-container">
-      <section className="carrusel-container" ref={slider}>
-        <Slide
-          width={1380}
-          height={250}
-          url="/images/banner/banner01.png"
-          text="Propósito"
-        />
-        <Slide
-          width={1380}
-          height={250}
-          url="/images/banner/banner02.png"
-          text="Prácticas"
-        />
-        <Slide
-          width={1380}
-          height={250}
-          url="/images/banner/banner03.png"
-          text="Implementación"
-        />
-      </section>
-      {/* <section className="buttons-container">
-        <button className='button-style btn-left' onClick={() => previous()} >{`<`}</button>
-        <button className='button-style btn-right' onClick={() => next()} >{`>`}</button>
-      </section> */}
-    </div>
+
+    <section className="carrusel-container" ref={slider}>
+      <Slide
+        url="/images/banner/banner01.png"
+        width={1380}
+        height={250}
+        text="Propósito"
+      />
+      <Slide
+        url="/images/banner/banner02.png"
+        width={1380}
+        height={250}
+        text="Prácticas"
+      />
+      <Slide
+        url="/images/banner/banner03.png"
+        width={1380}
+        height={250}
+        text="Implementación"
+      />
+    </section>
   );
 }

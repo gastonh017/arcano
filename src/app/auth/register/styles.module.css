@@ -63,8 +63,9 @@
 }
 
 .formulario>p {
-  color: rgb(209, 51, 23);
-  background-color: rgba(187, 187, 187, 0.24);
+  color: rgb(209, 82, 23);
+  background-color: rgba(187, 187, 187, 0.822);
+  font-weight: 600;
   width: 100%;
   padding: 2px;
   margin: .5rem;

@@ -15,9 +15,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-          <Head>
-      <title> Arcano Ingenieria en Calidad</title>
-    </Head>
+      <Head>
+        <title> Arcano Ingenieria en Calidad</title>
+      </Head>
       <body>
         <NavBar />
         {children}

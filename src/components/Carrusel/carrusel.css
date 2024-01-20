@@ -1,6 +1,7 @@
 .carrusel-container {
   display: flex;
   position: relative;
+  margin: 0;
   flex-flow: row nowrap;
 }
 
@@ -18,20 +19,4 @@
 
 .button-style:hover {
   color: rgba(240, 189, 255, 0.726);
-}
-
-.btn-left {
-  text-shadow: -1px 3px 3px #444;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translatey(-70%);
-}
-
-.btn-right {
-  text-shadow: 1px 3px 3px #444;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translatey(-70%);
 }

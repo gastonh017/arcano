@@ -54,8 +54,14 @@ export default function UserRegister() {
         icon: 'success'
       })
       router.push('/')
+    } else {
+      Swal.fire({
+        title: 'El Correo Electrónico ya está registrado',
+        icon: "warning",
+        timer: 1500,
+        showConfirmButton: false
+      })
     }
-
 
     const resJSON = await res.json();
     console.log('resJSON del register: ', resJSON)
