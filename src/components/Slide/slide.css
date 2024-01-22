@@ -1,5 +1,6 @@
 .slide-container {
   position: relative;
+  margin: 0;
 }
 
 .slide-container>p {
@@ -15,4 +16,5 @@
 
 .slide-img {
   width: 100vw;
+  height: 400px;
 }
