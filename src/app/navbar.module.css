@@ -1,8 +1,9 @@
 .header {
   font-size: .9rem;
+  width: 100vw;
   background-color: #ffff00;
   padding: 1rem;
-  position: relative;
+  position: fixed;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
@@ -27,8 +28,14 @@
   justify-content:space-between;
 }
 
+.brandLogo{
+  width: 110px;
+  height: 37px;
+  margin-left: 1rem;
+}
+
 .logo {
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 
 .ul,
@@ -43,7 +50,7 @@
 
 .ul>li,
 .ulUser>li {
-  padding: 0 1rem;
+  padding-right: 5vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -104,6 +111,10 @@
   text-decoration: none;
 }
 
+.avatarContainer>p{
+  display: none;
+}
+
 .avatar {
   border-radius: 50%;
   margin-right: .5rem;
@@ -135,7 +146,26 @@
 .register:after,
 .login:after,
 .logout:after{
-  content: '';
+  display: none;
+  transition:all 1s ease-in-out;
+}
+
+.register:after{
+  content: 'Registrarse';
+}
+
+.login:after {
+  content: ' Acceder';
+}
+
+.logout:after{
+  content: ' Salir';
+}
+
+.register:hover::after,
+.login:hover::after,
+.logout:hover::after{
+  display:block;
 }
 
 .logout:hover,
@@ -195,8 +225,8 @@
   position: absolute;
   top: 80px;
   left: -100vw;
-  z-index: 10;
-  transition: left 400ms ease-in-out;
+  z-index: 0;
+  transition: all 100ms ease-in-out;
 }
 
 
@@ -221,23 +251,31 @@
     flex-flow: row wrap;
     justify-content:left;
   }
+
+  .avatarContainer>p{
+    display:block;
+  }
+  
   .logout,
   .login,
   .register {
-    font-size: .8rem;
+    font-size: .9rem;
     padding: .3rem 1rem;
   }
 
   .register:after{
+    display: block;
     content: 'Registrarse';
   }
 
   .login:after {
-    content: 'Acceder';
+    display: block;
+    content: ' Acceder';
   }
 
   .logout:after{
-    content: 'Salir';
+    display: block;
+    content: ' Salir';
   }
 
   .ul>li,

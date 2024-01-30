@@ -1,7 +1,7 @@
 'use client'
 import Link from "next/link";
-import { useState , useEffect } from 'react';
-import { FaBars } from "react-icons/fa";
+import { useState, useEffect } from 'react';
+import { FaBars } from "react-icons/fa6";
 import Dropdown from "@/components/NavBar2/NavBarItems";
 import styles from '@/app/navbar.module.css'
 
@@ -16,14 +16,14 @@ const NavBarLinkResponsive = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  });
+},[]);
 
   function handleResize() {
     const width = window
     if (width.innerWidth >= 768) {
       setMenuMobileOpen(true);
     } else {
-      if (menuMobileOpen) setMenuMobileOpen(false);
+      setMenuMobileOpen(false);
     };
   };
 
@@ -35,7 +35,7 @@ const NavBarLinkResponsive = () => {
     <>
       <div className={styles.mobileMode}>
         <button onClick={() => { menuMobileOpen ? setMenuMobileOpen(false) : setMenuMobileOpen(true) }}>
-          <FaBars style={{color:'#222', cursor:'pointer'}} />
+          <FaBars style={{ color: '#222', cursor: 'pointer', fontSize: '1rem' }} />
         </button>
       </div>
       <div className={menuMobileOpen ? styles.linksContainer : styles.linksContainerClose}>

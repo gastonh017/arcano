@@ -1,7 +1,7 @@
 'use client'
 import { signOut } from 'next-auth/react';
 import { getProviders } from "next-auth/react";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRightFromBracket } from "react-icons/fa6";
 import styles from '../app/navbar.module.css'
 
 export default function LogOut() {
@@ -11,8 +11,8 @@ export default function LogOut() {
     <button
       onClick={() => signOut()}
       className={styles.logout}
-    > {'['}
-      <FaArrowRight  style={{fontSize:'.5rem',margin:'.1rem .25rem 0 0'}}/>
+    >
+      <FaArrowRightFromBracket style={{ fontSize: '.8rem', margin:'.3rem' }} />
     </button>
   )
 }

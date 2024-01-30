@@ -37,7 +37,8 @@ export default function UserLogin() {
 
     if (response.error) {
       //alert(response.error) 
-      setError(response.error)
+      setError(response.error);
+      Swal.close()
     }
     else {
       Swal.close()

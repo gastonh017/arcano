@@ -4,7 +4,7 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import Logout from "@/components/logout";
 import styles from "./navbar.module.css";
-import { FaArrowLeft, FaAddressCard } from "react-icons/fa";
+import { FaAddressBook, FaUser } from "react-icons/fa6";
 import NavBarLinkResponsive from "@/components/NavBar2/NavBarLInkResponsive";
 
 // const pages = [
@@ -62,7 +62,7 @@ import NavBarLinkResponsive from "@/components/NavBar2/NavBarLInkResponsive";
 // ];
 
 export async function NavBar() {
-  const logoSize = 24;
+  const logoSize = 33;
   const session = await getServerSession(authOptions);
 
   return (
@@ -70,14 +70,20 @@ export async function NavBar() {
       <section className={styles.navbarContainer}>
         <article className={styles.navbar}>
           <div className={styles.logo}>
-            <Images src="/images/logo arcano.png" width={130} height={40} alt="logo"></Images>
+            <Images
+              src="/images/logo arcano.png"
+              width={130}
+              height={40}
+              alt="logo"
+              className={styles.brandLogo}
+            ></Images>
           </div>
-          <div style={{display:'flex', alignItems:'center'}}>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
             <NavBarLinkResponsive />
           </div>
 
         </article>
-        <article> 
+        <article>
           <ul className={styles.ulUser}>
             {session && session.user ? (
               <>
@@ -101,13 +107,12 @@ export async function NavBar() {
               <>
                 <li>
                   <Link href="/auth/register" className={styles.register}>
-                    <FaAddressCard style={{ fontSize: '.8rem' }} />
+                    <FaAddressBook style={{ fontSize: '.8rem', margin: '.3rem' }} />
                   </Link>
                 </li>
                 <li>
                   <Link href="/auth/login" className={styles.login}>
-                    {'['}
-                    <FaArrowLeft style={{ fontSize: '.5rem', marginLeft:'.2rem' }} />
+                    <FaUser style={{ fontSize: '.8rem', margin: '.3rem' }} />
                   </Link>
                 </li>
               </>
