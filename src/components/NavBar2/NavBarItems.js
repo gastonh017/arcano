@@ -13,14 +13,14 @@ const Dropdown = () => {
   return (
     <div className={styles.dropdown}>
       <button onMouseOver={toggleDropdown} className={styles.dropdownbtn}>
-        <p className={styles.Link}>Marco</p>
+        <p className={styles.link}>Marco</p>
       </button>
       {isOpen && (
-        <div className={styles.dropdownContent}>
+        <ul className={styles.dropdownContent}>
           <li><Link href="/marco/protagonistas" className={styles.link} > Protagonistas</Link></li>
           <li><Link href="/marco/dominios" className={styles.link}> Dominios</Link></li>
           <li><Link href="/marco/hacer" className={styles.link}> Hacer</Link></li>
-        </div>
+        </ul>
       )}
     </div>
   );

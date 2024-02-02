@@ -16,10 +16,11 @@ const NavBarLinkResponsive = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-},[]);
+  }, []);
 
   function handleResize() {
-    const width = window
+    const width = window;
+    console.log('handleResize')
     if (width.innerWidth >= 768) {
       setMenuMobileOpen(true);
     } else {
@@ -29,22 +30,31 @@ const NavBarLinkResponsive = () => {
 
   useEffect(() => {
     handleResize();
-  },[])
+  }, [])
 
   return (
     <>
       <div className={styles.mobileMode}>
         <button onClick={() => { menuMobileOpen ? setMenuMobileOpen(false) : setMenuMobileOpen(true) }}>
-          <FaBars style={{ color: '#222', cursor: 'pointer', fontSize: '1rem' }} />
+          <FaBars style={{ color: '#222', cursor: 'pointer', fontSize: '1.5rem' }} />
         </button>
       </div>
-      <div className={menuMobileOpen ? styles.linksContainer : styles.linksContainerClose}>
+      <div
+        className={menuMobileOpen ? styles.linksContainer : styles.linksContainerClose}>
         <ul className={styles.ul}>
           <li>
-            <Link className={styles.link} href="/">Home</Link>
+            <Link
+              className={styles.link}
+              href="/"
+              onClick={() => handleResize()}
+            >Home</Link>
           </li>
           <li>
-            <Link className={styles.link} href="/nosotros">Nosotros</Link>
+            <Link
+              className={styles.link}
+              href="/nosotros"
+              onClick={() => handleResize()}
+            >Nosotros</Link>
           </li>
           <li>
             <Dropdown />

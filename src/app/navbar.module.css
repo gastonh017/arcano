@@ -25,10 +25,10 @@
   overflow: hidden;
   display: flex;
   flex-flow: row wrap;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
-.brandLogo{
+.brandLogo {
   width: 110px;
   height: 37px;
   margin-left: 1rem;
@@ -50,7 +50,7 @@
 
 .ul>li,
 .ulUser>li {
-  padding-right: 5vw;
+  padding: 0 1vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -80,6 +80,7 @@
 }
 
 .dropdownContent {
+  list-style: none;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -111,7 +112,7 @@
   text-decoration: none;
 }
 
-.avatarContainer>p{
+.avatarContainer>p {
   display: none;
 }
 
@@ -120,9 +121,13 @@
   margin-right: .5rem;
 }
 
-.logout,
+/*Botones del navbar*/
 .login,
+.logout,
 .register {
+  width: 4rem;
+  height: 2rem;
+  overflow: hidden;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #222;
   font-size: .8rem;
@@ -134,16 +139,34 @@
   transition: box-shadow 150ms ease-in-out;
   text-align: center;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .register {
+  width: 4.5rem;
   background-color: rgb(192, 255, 255);
 }
 
-.register:after,
+.login>div,
+.logout>div,
+.register>div {
+  line-height: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: .25rem;
+  transition: all 300ms ease-in-out;
+}
+
+.login:hover>div,
+.logout:hover>div,
+.register:hover>div {
+  top: -1.15rem;
+}
+
+/* .register:after, 
 .login:after,
 .logout:after{
   display: none;
@@ -155,21 +178,21 @@
 }
 
 .login:after {
-  content: ' Acceder';
+  content: 'Ingresar';
 }
 
 .logout:after{
   content: ' Salir';
 }
 
-.register:hover::after,
 .login:hover::after,
 .logout:hover::after{
   display:block;
-}
+} */
 
-.logout:hover,
-.login:hover {
+
+.login:hover,
+.logout:hover {
   border: transparent solid 1px;
   color: #111;
   background-color: rgb(238, 255, 140);
@@ -184,8 +207,8 @@
     -1px 1px 10px #aaa8;
 }
 
+/* responsive menu */
 .mobileMode {
-  /* width: 30%; */
   display: flex;
   justify-content: center;
   visibility: visible;
@@ -197,10 +220,10 @@
 }
 
 .linksContainer {
-  background-color: #faf2d688;
+  background-color: #faf2d6dd;
   width: 100vw;
   height: 50vh;
-  min-height: 10rem;
+  min-height: 20rem;
   position: absolute;
   top: 80px;
   left: 0px;
@@ -208,13 +231,13 @@
   transition: left 400ms ease-in-out;
 }
 
-.linksContainer > ul,
-.linksContainerClose > ul {
+.linksContainer>ul,
+.linksContainerClose>ul {
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
-  justify-content:space-evenly;
-  align-items:center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .linksContainerClose {
@@ -227,6 +250,22 @@
   left: -100vw;
   z-index: 0;
   transition: all 100ms ease-in-out;
+}
+
+
+@media(min-width:576px) {
+
+  .ul>li,
+  .ulUser>li {
+    padding: 0 3vw;
+  }
+
+  .login,
+  .logout,
+  .register {
+    width: 4.5rem;
+  }
+
 }
 
 
@@ -244,44 +283,66 @@
   .header {
     font-size: 1rem;
   }
+
   .navbar {
     min-width: 50vw;
     overflow: hidden;
     display: flex;
     flex-flow: row wrap;
-    justify-content:left;
+    justify-content: left;
   }
 
-  .avatarContainer>p{
-    display:block;
+  .avatarContainer>p {
+    display: block;
   }
-  
+
+  /*Botones del navbar*/
   .logout,
   .login,
   .register {
+    width: 7rem;
     font-size: .9rem;
-    padding: .3rem 1rem;
+    position: relative;
   }
 
-  .register:after{
+  .logout>div,
+  .login>div,
+  .register>div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    top: .5rem;
+  }
+  
+  .login:hover>div ,
+  .logout:hover>div ,
+  .register:hover>div{
+    top: .4rem;
+  }
+
+
+  /* .register:after{
     display: block;
     content: 'Registrarse';
   }
 
   .login:after {
     display: block;
-    content: ' Acceder';
+    content: 'Ingresar';
   }
 
-  .logout:after{
+  .logout:after {
     display: block;
     content: ' Salir';
-  }
+  }*/
 
   .ul>li,
   .ulUser>li {
-    padding: 0 .9rem;
+    padding: 0 0.8rem;
   }
+
+  /* responsive menu */
 
   .mobileMode {
     display: none;
@@ -299,7 +360,8 @@
     justify-content: space-evenly;
     align-items: center;
   }
-  .linksContainer > ul{
+
+  .linksContainer>ul {
     height: auto;
 
     flex-flow: row nowrap;

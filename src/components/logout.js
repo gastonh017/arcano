@@ -12,7 +12,10 @@ export default function LogOut() {
       onClick={() => signOut()}
       className={styles.logout}
     >
-      <FaArrowRightFromBracket style={{ fontSize: '.8rem', margin:'.3rem' }} />
+      <div>
+        <FaArrowRightFromBracket style={{ fontSize: '.8rem', margin: '.3rem' }} />
+        <p className={styles.nameButton}>Salir</p>
+      </div>
     </button>
   )
 }

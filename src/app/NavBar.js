@@ -107,12 +107,18 @@ export async function NavBar() {
               <>
                 <li>
                   <Link href="/auth/register" className={styles.register}>
-                    <FaAddressBook style={{ fontSize: '.8rem', margin: '.3rem' }} />
+                    <div>
+                      <FaAddressBook style={{ fontSize: '.8rem', margin: '.3rem' }} />
+                      <p className={styles.nameButton}>Registrarse</p>
+                    </div>
                   </Link>
                 </li>
                 <li>
                   <Link href="/auth/login" className={styles.login}>
-                    <FaUser style={{ fontSize: '.8rem', margin: '.3rem' }} />
+                    <div>
+                      <FaUser style={{ fontSize: '.8rem', margin: '.3rem' }} />
+                      <p className={styles.nameButton}>Ingresar</p>
+                    </div>
                   </Link>
                 </li>
               </>
