@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import TablaPlanificar1 from './tablaPlanificar1';
 
 export default function Planificar() {
   return (
@@ -13,12 +13,7 @@ export default function Planificar() {
         talleres de capacitación para nivelar el conocimiento sobre la guía y la
         temática de calidad.
       </p>
-      <Image 
-src='/images/svg/planificar.png'
-width={400}
-height={400}
-alt='ciclo'
-/>
+    <TablaPlanificar1 />
     </main>
   );
 }

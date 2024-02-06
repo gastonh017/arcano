@@ -91,9 +91,9 @@
   background-color: #ddd;
 }
 
-.dropdown:hover .dropdownContent {
+.dropdownContent {
   display: block;
-}
+} 
 
 .avatarContainer {
   cursor: pointer;

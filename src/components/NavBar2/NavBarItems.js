@@ -17,7 +17,10 @@ const Dropdown = () => {
             <Link className={styles.link} href="/marco">Marco</Link>
       </li>
       <Images
-          onClick={toggleDropdown} 
+          onClick={ () => {
+            console.log("onclickkkkkk!!!")
+            setIsOpen(!isOpen);
+          }} 
           className={styles.dropdownbtn}
           src='/images/svg/arrow-navBar.svg'
           width={25}
