@@ -158,7 +158,7 @@
   height: 1rem;
   position: absolute;
   top: .25rem;
-  transition: all 300ms ease-in-out;
+  transition: top 300ms ease-in-out;
 }
 
 .login:hover>div,
@@ -313,12 +313,13 @@
     justify-content: center;
     align-items: center;
     top: .5rem;
+    transition: top 100ms ease-in-out;
   }
   
   .login:hover>div ,
   .logout:hover>div ,
   .register:hover>div{
-    top: .4rem;
+    top: .45rem;
   }
 
 

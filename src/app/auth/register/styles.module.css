@@ -51,10 +51,12 @@
   padding: .5rem 1.5rem;
   margin: .5rem;
   font-size: 1rem;
+  font-family: inherit;
   color: rgba(75, 67, 57, 0.699);
   background-color: rgb(235, 214, 255);
   border: none;
   border-radius: 2rem;
+  text-decoration: none;
   cursor: pointer
 }
 
@@ -62,6 +64,7 @@
   background-color: rgb(145, 145, 145);
   color: rgba(17, 16, 14, 0.89);
 }
+
 
 .formulario>p {
   color: rgb(209, 82, 23);

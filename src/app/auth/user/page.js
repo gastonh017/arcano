@@ -216,7 +216,12 @@ export default function UserRegister() {
                 disabled={!editUser}
               />
               {editUser && !editPassword &&
-                <button className={styles.submitbutton} onClick={() => setEditPassword(true)}>Cambiar password</button>
+                <div>
+                  <button
+                    className={styles.submitbutton}
+                    onClick={() => setEditPassword(true)}
+                  >Cambiar password</button>
+                </div>
               }
               {editUser && editPassword &&
                 <>
@@ -276,6 +281,13 @@ export default function UserRegister() {
                     placeholder='*****'
                   />
                   {errors.reNewPassword && <p>{errors.reNewPassword.message}</p>}
+
+                  <div>
+                    <button
+                      className={styles.submitbutton}
+                      onClick={() => setEditPassword(false)}
+                    >No cambiar password</button>
+                  </div>
                 </>
               }
 

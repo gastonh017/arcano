@@ -3,9 +3,9 @@ import Images from "next/image";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import Logout from "@/components/logout";
-import styles from "./navbar.module.css";
-import { FaAddressBook, FaUser } from "react-icons/fa6";
 import NavBarLinkResponsive from "@/components/NavBar2/NavBarLInkResponsive";
+import { FaAddressBook, FaUser } from "react-icons/fa6";
+import styles from "./navbar.module.css";
 
 // const pages = [
 //   {
