@@ -32,8 +32,8 @@ const Dropdown = ({ handleResize , pathname }) => {
       </div>
       {isOpen && (
         <ul className={styles.dropdownContent}>
-          <li><Link href="/marco/protagonistas" className={styles.link} onClick={() => toggleDropdown()}> Protagonistas</Link></li>
-          <li><Link href="/marco/dominios" className={styles.link} onClick={() => toggleDropdown()}> Dominios</Link></li>
+          <li><Link href="/marco/propositos" className={styles.link} onClick={() => toggleDropdown()}> Propósitos</Link></li>
+          <li><Link href="/marco/ser" className={styles.link} onClick={() => toggleDropdown()}>Ser</Link></li>
           <li><Link href="/marco/hacer" className={styles.link} onClick={() => { toggleDropdown(); return handleResize }}> Hacer</Link></li>
         </ul>
       )}

@@ -62,6 +62,13 @@ const NavBarLinkResponsive = () => {
           <li>
             <Dropdown handleResize={()=>handleResize()} pathname={pathname}/>
           </li>
+          <li>
+            <Link
+              className={styles.link}
+              href="/contactanos"
+              onClick={() => handleResize()}
+            >Contactanos</Link>
+          </li>
         </ul>
       </div>
     </>
