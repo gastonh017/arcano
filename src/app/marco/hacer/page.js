@@ -2,24 +2,16 @@ import Image from 'next/image'
 import Link from "next/link";
 
 export default function Hacer() {
-<<<<<<< HEAD
-    return (
-      <main style={{padding:"5rem 2rem 1rem"}}>
-       <h1>esta es la pagina del hacer</h1>
-      </main>
-    )
-  }
-=======
   return (
-    <main>
+    <main style={{ padding: "6rem 2rem 1rem" }}>
       <h1>Flujo del Hacer</h1>
       <p> El Flujo del Hacer representa las etapas de la implementación</p>
-<Image 
-src='/images/svg/ciclo del hacer.png'
-width={225}
-height={225}
-alt='ciclo'
-/>
+      <Image
+        src='/images/svg/ciclo del hacer.png'
+        width={225}
+        height={225}
+        alt='ciclo'
+      />
       <h3>Etapas</h3>
       <p>
         La puesta en marcha de las cuatro etapas se realiza en iteraciones, es
@@ -28,7 +20,7 @@ alt='ciclo'
         siguiente iteración.
       </p>
       <li><Link href="/marco/hacer/planificar" > Planificar a Conciencia </Link></li>
-      
+
       <li><Link href="/marco/hacer/forma" > Hacer en forma iterativa e incremental </Link> </li>
       <li>Verificarque haya mejora y entrega de valor </li>
       <li>Actuar para expandir el cambio</li>
@@ -45,4 +37,3 @@ alt='ciclo'
     </main>
   );
 }
->>>>>>> dbabea1971d60681099de005ae67757b42976cc0
