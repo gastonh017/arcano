@@ -89,15 +89,21 @@
 }
 
 .formulario>input {
-  margin: 0.5rem 0 .25rem 0;
-  color: rgb(241, 241, 241);
+  background-color: aliceblue;
+  color: rgba(75, 67, 57, 0.9);
   font-size: 1rem;
   font-style: italic;
   font-weight: 600;
   width: 300px;
   padding: 8px;
+  margin: 0.5rem 0 .25rem 0;
   border: none;
   border-radius: 3px;
+}
+
+.formulario>input:disabled {
+  background-color: rgba(75, 67, 57, 0.9);
+  color: aliceblue;
 }
 
 .formulario>div {
@@ -129,8 +135,9 @@
 .imageAvatar {
   border-radius: 50%;
   margin: .5rem 0 1rem;
-  width: auto;
-  max-width: 25vw;
+  width: 180px;
+  height: auto;
+  max-width: 50vw;
   cursor: pointer;
 }
 
@@ -142,4 +149,14 @@
   overflow: hidden;
   position: absolute;
   z-index: -1;
+}
+
+.bkg1 {
+  background-color: aliceblue;
+  color: rgba(75, 67, 57, 0.9);
+}
+
+styles.bkg2 {
+  background-color: rgba(75, 67, 57, 0.9);
+  color: aliceblue;
 }

@@ -2,7 +2,7 @@
   padding: 1rem;
   padding-top: 6rem;
   background-color: rgba(75, 67, 57, 0.699);
-  min-height: 70vh;
+  min-height: calc(100vh - 280px);
   color: white;
   display: flex;
   flex-flow: column nowrap;
@@ -80,4 +80,11 @@
   padding: .5rem;
   width: 100%;
   border-radius: 5px;
+}
+
+
+@media(min-width: 768px) {
+  .fondo {
+    min-height: calc(100vh - 140px);
+  }
 }

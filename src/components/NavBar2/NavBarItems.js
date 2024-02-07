@@ -1,39 +1,41 @@
 'use client'
 import Link from "next/link";
 import styles from '@/app/navbar.module.css'
-import { useState } from 'react';
+import { useState , useEffect } from 'react';
 import Images from 'next/image'
 
-const Dropdown = () => {
+const Dropdown = ({ handleResize , pathname }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
+    if (isOpen) handleResize();
     setIsOpen(!isOpen);
   };
 
+  useEffect(()=> {
+    setIsOpen(false)
+  },[pathname])
+
   return (
-    <div className={styles.dropdown}>
-      <li> 
-            <Link className={styles.link} href="/marco">Marco</Link>
-      </li>
-      <Images
-          onClick={ () => {
-            console.log("onclickkkkkk!!!")
-            setIsOpen(!isOpen);
-          }} 
+    <div>
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <Link className={styles.link} href="/marco"
+          onClick={handleResize}>Marco</Link>
+        <Images
+          onClick={toggleDropdown}
           className={styles.dropdownbtn}
           src='/images/svg/arrow-navBar.svg'
-          width={25}
-          height={25}
+          width={32}
+          height={32}
           alt='logo'
-          
         />
+      </div>
       {isOpen && (
-        <div className={styles.dropdownContent}>
-          <li><Link href="/marco/protagonistas" className={styles.link} > Protagonistas</Link></li>
-          <li><Link href="/marco/dominios" className={styles.link}> Dominios</Link></li>
-          <li><Link href="/marco/hacer" className={styles.link}> Hacer</Link></li>
-        </div>
+        <ul className={styles.dropdownContent}>
+          <li><Link href="/marco/propositos" className={styles.link} onClick={() => toggleDropdown()}> Propósitos</Link></li>
+          <li><Link href="/marco/ser" className={styles.link} onClick={() => toggleDropdown()}>Ser</Link></li>
+          <li><Link href="/marco/hacer" className={styles.link} onClick={() => { toggleDropdown(); return handleResize }}> Hacer</Link></li>
+        </ul>
       )}
     </div>
   );

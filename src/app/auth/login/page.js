@@ -37,13 +37,13 @@ export default function UserLogin() {
 
     if (response.error) {
       //alert(response.error) 
-      setError(response.error)
+      setError(response.error);
     }
     else {
-      Swal.close()
       router.push('/');
       router.refresh();
     }
+    Swal.close()
 
   });
 
