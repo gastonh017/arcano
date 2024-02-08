@@ -4,14 +4,10 @@ import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Image from 'next/image';
-import lienzo from '../../../../../public/images/svg/lienzos/LienzoAcuerdos.png'
+import lienzo0 from '../../../../../public/images/svg/lienzos/LienzoAcuerdos.png'
+import lienzo from 'public/images/lienzos/lienzoAcuerdos.png'
 
 function LienzoValores({handleClose, show}) {
-//   const [show, setShow]= useState(false);
-
-//   const handleClose = () => setShow(false);
-//   const handleShow = () => setShow(true);
-
   return (
     <>
     <Modal
@@ -22,10 +18,10 @@ function LienzoValores({handleClose, show}) {
         size="lg"
       >
         <Modal.Header closeButton>
-          <Modal.Title>Lienzo de Valores</Modal.Title>
+          <Modal.Title>Lienzo de Acuerdos</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Image src={lienzo} width={775} height={550} alt='lienzo de valores'></Image>
+          <Image src={lienzo} width={775} height={550} alt='lienzo de acuerdos'></Image>
         </Modal.Body>
         <Modal.Footer>
           <Button  onClick={handleClose}>
