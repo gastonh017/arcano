@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Image from 'next/image';
+import BotonDescarga from '../BotonDescarga';
 
 function LienzoAcuerdos({handleClose, show}) {
 //   const [show, setShow] = useState(false);
@@ -30,6 +31,7 @@ function LienzoAcuerdos({handleClose, show}) {
           <Button  onClick={handleClose}>
             Close
           </Button>
+          <BotonDescarga fileName="lienzoacuerdos.png" />
           {/* <a href="./data/MuraccioleCV.pdf" download="Lienzo de Valores.pdf">
                   <i class="networks-icon">
                     <p class="network-text" hidden="" style="display: none;">descargar CV</p>

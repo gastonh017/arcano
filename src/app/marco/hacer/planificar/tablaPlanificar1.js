@@ -3,8 +3,8 @@
 import Table from 'react-bootstrap/Table';
 import 'bootstrap/dist/css/bootstrap.css';
 import Image from 'next/image';
-import LienzoValores from './lienzo_valores';
-import LienzoAcuerdos from './lienzo_valores';
+import LienzoValores from './LienzoValores';
+import LienzoAcuerdos from './LienzoValores';
 import { useState } from 'react';
 
 

@@ -5,6 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Image from 'next/image';
 import lienzo from '../../../../../public/images/svg/lienzos/LienzoAcuerdos.png'
+import BotonDescarga from '../BotonDescarga';
 
 function LienzoValores({handleClose, show}) {
 //   const [show, setShow]= useState(false);
@@ -31,11 +32,7 @@ function LienzoValores({handleClose, show}) {
           <Button  onClick={handleClose}>
             Close
           </Button>
-           <a href="./public/images/svg/lienzos/LienzoValores.png" download="LienzoValores.png">
-                  <i>
-                  <Button>Descargar</Button>
-                  </i>
-                </a> 
+          <BotonDescarga fileName="LienzoValores.png" />
         </Modal.Footer>
     </Modal>
     </>
