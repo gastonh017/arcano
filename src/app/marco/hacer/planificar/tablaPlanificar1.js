@@ -2,12 +2,7 @@
 
 import Table from 'react-bootstrap/Table';
 import 'bootstrap/dist/css/bootstrap.css';
-import Image from 'next/image';
-import LienzoValores from './lienzoModal';
-import LienzoAcuerdos from './lienzo_acuerdos';
 import Lienzo from './lienzo'
-import { useState } from 'react';
-import { set } from 'react-hook-form';
 
 const lienzos = [
   {
@@ -68,20 +63,6 @@ const lienzos = [
 
 
 function TablaPlanificar1() {
-  // const [show01, setShow01] = useState(false);
-  // const [show02, setShow02] = useState(false);
-  // const [show03, setShow03] = useState(false);
-  // const [show04, setShow04] = useState(false);
-  // const [show05, setShow05] = useState(false);
-
-  // const handleClose = () => {
-  //   setShow01(false);
-  //   setShow02(false);
-  //   setShow03(false);
-  //   setShow04(false);
-  //   setShow05(false);
-  // }
-
 
   return (
     <Table className="striped bordered responsive size='xl' ">
@@ -101,19 +82,6 @@ function TablaPlanificar1() {
               <li>Pautas para facilitar el taller de sensibilización</li>
               <li>< Lienzo data={lienzos[0]} /></li>
               <li>< Lienzo data={lienzos[1]} /></li>
-              {/* <li >Lienzo de Valores</li>
-              <button onClick={() => setShow01(true)}>
-                <Image src="/images/svg/acceder_lienzos.png" width={20} height={20} alt="acceder" >
-                </Image>
-              </button>
-              <LienzoValores handleClose={handleClose} show={show01} />
-
-              <li>Lienzo de Acuerdos</li>
-              <button onClick={() => setShow02(true)}>
-                <Image src="/images/svg/acceder_lienzos.png" width={20} height={20} alt="acceder" >
-                </Image>
-              </button>
-              <LienzoAcuerdos handleClose={handleClose} show={show02} /> */}
             </ul>
           </td>
         </tr>
