@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Button from 'react-bootstrap/Button';
 import styles from './page.module.css'
 
-function LienzoValores({handleClose, show, dataLienzo}) {
+function LienzoModal({handleClose, show, dataLienzo}) {
   const data = Object(dataLienzo);
   return (
     <>
@@ -37,4 +37,4 @@ function LienzoValores({handleClose, show, dataLienzo}) {
   );
 }
 
-export default LienzoValores;
+export default LienzoModal;

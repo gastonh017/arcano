@@ -22,8 +22,8 @@ export default function Hacer() {
       <li><Link href="/marco/hacer/planificar" > Planificar a Conciencia </Link></li>
 
       <li><Link href="/marco/hacer/forma" > Hacer en forma iterativa e incremental </Link> </li>
-      <li>Verificarque haya mejora y entrega de valor </li>
-      <li>Actuar para expandir el cambio</li>
+      <li><Link href="/marco/hacer/verificar" >Verificarque haya mejora y entrega de valor </Link></li>
+      <li><Link href="/marco/hacer/expandirCambio" >Actuar para expandir el cambio </Link></li>
       <h3>Planificar a Conciencia</h3>
       <p>
         Todas las actividades de la primera etapa se realizan mediante la
