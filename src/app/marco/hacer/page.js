@@ -21,7 +21,7 @@ export default function Hacer() {
       </p>
       <li><Link href="/marco/hacer/planificar" > Planificar a Conciencia </Link></li>
 
-      <li><Link href="/marco/hacer/forma" > Hacer en forma iterativa e incremental </Link> </li>
+      <li><Link href="/marco/hacer/iterativaEIncremental" > Hacer en forma iterativa e incremental </Link> </li>
       <li>Verificarque haya mejora y entrega de valor </li>
       <li>Actuar para expandir el cambio</li>
       <h3>Planificar a Conciencia</h3>
