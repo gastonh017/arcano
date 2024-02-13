@@ -1,4 +1,4 @@
-import TablaPlanificar1 from './tablaPlanificar1';
+import TablaPlanificar1 from './tablaPlanificar';
 
 export default function Planificar() {
   return (

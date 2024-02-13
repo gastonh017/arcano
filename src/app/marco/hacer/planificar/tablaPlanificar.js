@@ -2,7 +2,7 @@
 
 import Table from 'react-bootstrap/Table';
 import 'bootstrap/dist/css/bootstrap.css';
-import Lienzo from './lienzo'
+import Lienzo from '../lienzo'
 
 const lienzos = [
   {

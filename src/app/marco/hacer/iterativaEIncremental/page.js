@@ -1,4 +1,4 @@
-import Tabla from './tabla'
+import Tabla from './tablaIterativeEIncremental'
 
 export default function Forma() {
   return (
