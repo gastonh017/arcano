@@ -1,4 +1,4 @@
-import TablaPlanificar1 from './tablaPlanificar';
+import TablaPlanificar from './tablaPlanificar';
 
 export default function Planificar() {
   return (
@@ -12,7 +12,7 @@ export default function Planificar() {
         talleres de capacitación para nivelar el conocimiento sobre la guía y la
         temática de calidad.
       </p>
-      <TablaPlanificar1 />
+      <TablaPlanificar />
     </main>
   );
 }

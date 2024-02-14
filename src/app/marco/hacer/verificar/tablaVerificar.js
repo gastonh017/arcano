@@ -32,9 +32,9 @@ function TablaVerificar() {
     <Table className="striped bordered responsive size='xl' ">
       <thead>
         <tr>
-          <th>Objetivo</th>
-          <th>Entregable</th>
-          <th>Práctica</th>
+        <th style={{ width: '30%' }} >Objetivos</th>
+          <th style={{ width: '35%' }} >Entregable</th>
+          <th>Prácticas</th>
         </tr>
       </thead>
       <tbody>

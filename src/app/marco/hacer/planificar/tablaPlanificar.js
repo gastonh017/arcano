@@ -62,15 +62,15 @@ const lienzos = [
 ]
 
 
-function TablaPlanificar1() {
+export default function TablaPlanificar() {
 
   return (
     <Table className="striped bordered responsive size='xl' ">
       <thead>
         <tr>
-          <th>Objetivo</th>
-          <th>Entregable</th>
-          <th>Práctica</th>
+          <th style={{ width: '30%' }} >Objetivos</th>
+          <th style={{ width: '35%' }} >Entregable</th>
+          <th>Prácticas</th>
         </tr>
       </thead>
       <tbody>
@@ -129,5 +129,3 @@ function TablaPlanificar1() {
     </Table>
   );
 }
-
-export default TablaPlanificar1;

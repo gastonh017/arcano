@@ -50,14 +50,14 @@ const lienzos = [
 ]
 
 
-function TablaPlanificar1() {
+export default function TablaIterativaEIncremental() {
 
   return (
     <Table className="striped bordered responsive size='xl' ">
       <thead>
         <tr>
-          <th style={{width:'20%'}} >Objetivos</th>
-          <th style={{width:'35%'}} >Entregable</th>
+          <th style={{ width: '20%' }} >Objetivos</th>
+          <th style={{ width: '35%' }} >Entregable</th>
           <th>Prácticas</th>
         </tr>
       </thead>
@@ -66,7 +66,7 @@ function TablaPlanificar1() {
         <tr>
           <td>Planificar la iteración</td>
           <td>Repositorio de ítems de trabajo e ideas</td>
-          <td rowspan="3" style={{padding:'5rem .5rem'}}>< Lienzo data={lienzos[0]} /></td>
+          <td rowspan="3" style={{ padding: '5rem .5rem' }}>< Lienzo data={lienzos[0]} /></td>
         </tr>
         <tr>
           <td>Gestionar los impedimentos</td>
@@ -100,5 +100,3 @@ function TablaPlanificar1() {
     </Table>
   );
 }
-
-export default TablaPlanificar1;

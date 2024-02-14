@@ -1,6 +1,6 @@
 import Tabla from './tablaIterativeEIncremental'
 
-export default function Forma() {
+export default function IterativaEIncremental() {
   return (
     <main style={{padding:"6rem 2rem 1rem"}}>
       <h3> Hacer en Forma Iterativa e Incremental</h3>
