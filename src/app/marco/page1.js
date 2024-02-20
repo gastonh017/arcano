@@ -1,6 +1,11 @@
-import DOMPurify from 'dompurify';
-import { JSDOM } from 'jsdom';
+'use client'
+// import DOMPurify from 'dompurify';
+// import { JSDOM } from 'jsdom';
+import { useEffect ,useState } from 'react';
+import Descripcion from './descripcion';
 import styles from './navbar.module.css';
+
+
 
 const marco = [
   {
@@ -157,12 +162,27 @@ const marco = [
   }
 ]
 
-const Verify = (text) => {
- return DOMPurify(new JSDOM('<!DOCTYPE html>').window).sanitize(text)
-}
+
+// const Verify = (text) => {
+//  return DOMPurify(new JSDOM('<!DOCTYPE html>').window).sanitize(text)
+// }
+
 
 
 export default function Marco() {
+  // const [ampliar, setAmpliar] = useState(false);
+  
+  // const arrayLength = 30;
+
+  // function Description(description) {
+  //   let stringResult = '';
+  //   description.length > arrayLength ? stringResult = description.slice(0, arrayLength) + '...' : stringResult = description;
+  //   return stringResult
+  // }
+
+  // function ContraerTexto(text){
+
+  // }
 
   return (
     <main className={styles.mainMarco}>
@@ -170,19 +190,106 @@ export default function Marco() {
 
       <section className={styles.cardContainer} >
         {marco.map((el, id) =>
-          <article key={el.id} className={styles.card} style={{ backgroundColor: `${el.colorCard}` }}>
-            <h2>{el.id}</h2>
-            <div dangerouslySetInnerHTML={{__html: Verify(el.text)}} />
-            <ul style={{ paddingLeft: '2rem', lineHeight: '1.2', listStyleType: `${el.listStyle}` }}>
+          // <article key={el.id} className={styles.card} style={{ backgroundColor: `${el.colorCard}` }}>
+          //   <h2>{el.id}</h2>
+          //   {/* <div dangerouslySetInnerHTML={{__html: Verify(el.text)}} /> */}
+          //   <div>{el.text}</div>
+          //   <ul style={{ paddingLeft: '2rem', lineHeight: '1.2', listStyleType: `${el.listStyle}` }}>
 
-              {el.list ?
-                el.contentList.map((item, id) => <li key={id} style={{ padding: '.5rem 0' }}>{item}</li>)
-                : ''
-              }
-            </ul>
-          </article>
+          //     {(el.list && ampliar) ?
+          //       el.contentList.map((item, id) => <li key={id} style={{ padding: '.5rem 0' }}>{item}</li>)
+          //       : ''
+          //     }
+          //   </ul>
+          //   {ampliar ? <button onClick={() => setAmpliar(false)} >Ampliar</button>: <button onClick={() => setAmpliar(true)} >Reducir</button>
+          //   } 
+          // </article>
+          < Descripcion data={el} key={id} />
         )}
       </section>
+
+      {/* <ul>
+        poner en tarjetas numeradas ???
+        <li>
+          {" "}
+          Constituye un <b>conjunto de prácticas</b> que agregan valor a las
+          instituciones educativas en su dimensión organizativa, y a partir de
+          ello, acompañan el aprendizaje de las habilidades ciudadanas de sus
+          estudiantes{" "}
+        </li>
+        <li>
+          {" "}
+          No es una metodología sino un <b>marco de trabajo</b> basado en la
+          integración de <b>Kaizen</b> en pequeños ciclos que habilitan el{" "}
+          <b>
+            desarrollo gradual de estas habilidades y el entendimiento de su
+            efecto en la mejora institucional
+          </b>{" "}
+          a través de radiadores de información que dialogan con el contexto
+          educativo
+        </li>
+        <li>
+          {" "}
+          Considera una solución a partir de la integración de Kaizen a la
+          dinámica de los flujos de valor de la institución educativa. Acompaña
+          el proceso de descubrimiento del desafio y facilita su identificación
+          en los flujos de valor organizacionales
+        </li>
+        <li>
+          {" "}
+          Entiende que las habilidades ciudadanas son el conjunto de
+          conocimientos, actitudes y habilidades culturales, cognitivas,
+          emocionales y comunicativas que, articulas entre sí, hacen posible que
+          la persona actue de manera constructiva en el dominio cívico.
+        </li>
+        <li>
+          {" "}
+          Instala el hábito de observar la gestión institucional y crear
+          práctivas sostenibels que garanticen el máximo nivel de apredizaje de
+          las habilidades ciudadanas requeridas para el ejercicio de una
+          ciudadanía responsable y el conocimiento de los efectos de su
+          desarrollo en el desempeño institucional
+        </li>
+        <li>
+          {" "}
+          Incorpora una cultura basada en la calidad, el reconocimiento de los
+          errores y problemas como una oportunidad de crecimiento y la
+          transformación de la mejora en un hábito
+        </li>
+        <li>
+          {" "}
+          Promueve prácticas que dotan a la institución de la habilidad para
+          producir cambios en ciclos de innovación y expansión.
+        </li>
+        <li>
+          {" "}
+          Construye acuerdos de colaboración para sostener la confianza y guiar
+          el proceso de implementación de esta guía. Fortalece con acuerdos la
+          comunicación con aquellos actores que interactúan activamente con la
+          institución haciendo hincapié en la integración de las familias y su
+          comunidad de referencia.
+        </li>
+        <li>
+          {" "}
+          Los protagonistas son: Equipo kaizen Educadores y equipo de
+          orientación vocacional Facilitadores Estudiantes Comunidad
+        </li>
+        <li>
+          Equipo kaizen: Conformado por los directores, vicedirectores y
+          secretarios. Este equipo impulsa y se compromete con la implementación
+          de esta guía.{" "}
+        </li>
+        <li>
+          Educadores y equipo de orientación vocacional: Facilitan el proceso de
+          desarrollo de las habilidades ciudadanas a través de las prácticas
+          creadas en colaboración con el equipo kaizen en el contexto áulico.{" "}
+        </li>
+        <li>
+          Estudiantes: Son protagonistas activos del proceso de aprendizaje de
+          las habilidades ciudadanas. Participan activamente de la experiencia
+          escolar de la implementación de la guía
+        </li>{" "}
+      </ul> */}
     </main>
   );
 }
