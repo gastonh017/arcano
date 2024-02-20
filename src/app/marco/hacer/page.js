@@ -3,13 +3,13 @@ import Link from "next/link";
 
 export default function Hacer() {
   return (
-    <main style={{ padding: "6rem 2rem 1rem" }}>
+    <main style={{ padding: "6rem 2rem 1rem"}}>
       <h1>Flujo del Hacer</h1>
       <p> El Flujo del Hacer representa las etapas de la implementación</p>
       <Image
-        src='/images/svg/ciclo del hacer.png'
-        width={225}
-        height={225}
+        src='/images/flujoHacer.png'
+        width={425}
+        height={425}
         alt='ciclo'
       />
       <h3>Etapas</h3>

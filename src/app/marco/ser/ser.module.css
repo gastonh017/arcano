@@ -1,0 +1,64 @@
+/* --colorPink01:'#ec4e70'; 
+--colorPink02:'#f0caca';
+--colorPink03:'#f6e0e0';
+--colorViolet01:'#794dff';
+--colorViolet02:'#c7baf2';
+--colorViolet03:'#dfd7f7';
+--colorBlue01:'#00b0f0';
+--colorBlue02:'#a2d8ec';
+--colorBlue03:'#c9e9f4';
+--colorAmber01:'#e69500';
+--colorAmber02:'#e9cfa2';
+--colorAmber03:'#f2e3c9';
+--colorGren01:'#2cbc9d';
+--colorGren02:'#7dd0be';
+--colorGren03:'#ace1d6';
+--color11:'#e9f3f3'
+*/
+
+.cardBody1 {
+    background-color: #ec4e70;
+    border-radius: 10px;
+    color: white;
+    min-height: 8rem;
+}
+.cardBody2 {
+    background-color: #794dff;
+    border-radius: 10px;
+    color: white;
+    min-height: 8rem;
+}
+.cardBody3 {
+    background-color: #00b0f0;
+    border-radius: 10px;
+    color: white;
+    min-height: 8rem;
+}
+.cardBody4 {
+    background-color: #e69500;
+    border-radius: 10px;
+    color: white;
+    min-height: 8rem;
+}
+
+.cardImgTop {
+    height: 14.3rem;
+    width: 12rem;
+    border-radius: 10px;
+}
+
+.cardTitle {
+    padding: auto;
+    font-size: large;
+    text-align: center;
+}
+
+.cardText {
+    padding: 5px;
+}
+
+.contenedorCards {
+    display: flex;
+    margin: 2%;
+    justify-content: space-evenly;
+}
