@@ -1,0 +1,51 @@
+.mainMarco {
+  padding: 6rem 2rem 1rem;
+  background-color: #7dd0be;
+}
+
+.cardContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: top;
+}
+
+.card {
+  margin: 2rem 1rem;
+  padding: 1rem;
+  width: 300px;
+  min-height: 300px;
+  /* border: 1px solid #ddd; */
+  border-radius: .5rem;
+  box-shadow: 
+    3px 3px 5px #ddd8,
+    3px -3px 5px #ddd8,
+    -3px 3px 5px #ddd8,
+    -3px -3px 5px #ddd8;
+}
+
+.card>h2 {
+  font-weight:lighter;
+  font-size: 5rem;
+  padding-bottom: 2rem;
+}
+
+.card>div {
+  font-size: 1.2rem;
+}
+
+.btn{
+  background-color: rgb(146, 146, 146);
+  font-weight:bold;
+  padding: .3rem .6rem;
+  margin-top: .3rem;
+  border-radius: .5rem;
+  border: none;
+  position: relative;
+  left: 195px;
+}
+
+@media(min-width:576px) {}
+
+
+@media(min-width:768px) {}

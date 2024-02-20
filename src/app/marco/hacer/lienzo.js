@@ -8,7 +8,6 @@ import styles from './page.module.css'
 function Lienzo({ data }) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
-  console.log('data en lienzo:', data);
   return (
     <div>
       <div className={styles.lienzContainer}>
