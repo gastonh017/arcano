@@ -25,9 +25,10 @@ const valores = [
     text: "La identidad cultural es un factor fundamental en el concepto de ciudadanía y las narrativas culturales.", 
   },
 ];
+
 export default function Protagonistas() {
   return (
-    <main style={{ padding: "6rem 2rem 1rem", backgroundColor: "#7dd0be"  }}>
+    <main className={styles.mainSer}>
       <h1>Protagonistas y Valores</h1>
       <br />
       <h2>Protagonistas</h2>

@@ -16,49 +16,79 @@
 --color11:'#e9f3f3'
 */
 
+.mainSer {
+  color: white;
+  padding: 6rem 1rem 1rem;
+  background-color: #7dd0be;
+}
+
+.mainSer>h1 {
+  font-size: 2.5rem;
+}
+
+.mainSer>P{
+  font-size: 1rem;
+}
+
+
 .cardBody1 {
-    background-color: #ec4e70;
-    border-radius: 10px;
-    color: white;
-    min-height: 8rem;
+  background-color: #ec4e70;
+  border-radius: 10px;
+  color: white;
+  min-height: 8rem;
 }
+
 .cardBody2 {
-    background-color: #794dff;
-    border-radius: 10px;
-    color: white;
-    min-height: 8rem;
+  background-color: #794dff;
+  border-radius: 10px;
+  color: white;
+  min-height: 8rem;
 }
+
 .cardBody3 {
-    background-color: #00b0f0;
-    border-radius: 10px;
-    color: white;
-    min-height: 8rem;
+  background-color: #00b0f0;
+  border-radius: 10px;
+  color: white;
+  min-height: 8rem;
 }
+
 .cardBody4 {
-    background-color: #e69500;
-    border-radius: 10px;
-    color: white;
-    min-height: 8rem;
+  background-color: #e69500;
+  border-radius: 10px;
+  color: white;
+  min-height: 8rem;
 }
 
 .cardImgTop {
-    height: 14.3rem;
-    width: 12rem;
-    border-radius: 10px;
+  height: 14.3rem;
+  width: 12rem;
+  border-radius: 10px;
 }
 
 .cardTitle {
-    padding: auto;
-    font-size: large;
-    text-align: center;
+  padding: auto;
+  font-size: large;
+  text-align: center;
 }
 
 .cardText {
-    padding: 5px;
+  padding: 5px;
 }
 
 .contenedorCards {
-    display: flex;
-    margin: 2%;
-    justify-content: space-evenly;
+  display: flex;
+  margin: 2%;
+  justify-content: space-evenly;
 }
+
+@media(min-width:576px) {
+  .mainSer {
+    padding: 6rem 2rem 1rem;
+  }
+  .mainSer > h1{
+    font-size: 3rem;
+  }
+}
+
+
+@media(min-width:768px) {}

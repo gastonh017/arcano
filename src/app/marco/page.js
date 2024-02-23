@@ -1,6 +1,6 @@
 import DOMPurify from 'dompurify';
 import { JSDOM } from 'jsdom';
-import styles from './navbar.module.css';
+import styles from './marco.module.css';
 
 const marco = [
   {
@@ -166,7 +166,7 @@ export default function Marco() {
 
   return (
     <main className={styles.mainMarco}>
-      <h1 style={{ fontSize: '3rem' }}>Principios</h1>
+      <h1>Principios</h1>
 
       <section className={styles.cardContainer} >
         {marco.map((el, id) =>
