@@ -1,20 +1,25 @@
 .mainMarco {
-  padding: 6rem 2rem 1rem;
+  color: white;
+  padding: 6rem 1rem 1rem;
   background-color: #7dd0be;
   color: white;
+}
+
+.mainMarco > h1{
+  font-size: 2.5rem;
 }
 
 .cardContainer {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: top;
 }
 
 .card {
   margin: 2rem 1rem;
   padding: 1rem;
-  width: 300px;
+  width: 290px;
   min-height: 300px;
   /* border: 1px solid #ddd; */
   border-radius: .5rem;
@@ -23,7 +28,20 @@
     3px -3px 5px #ddd8,
     -3px 3px 5px #ddd8,
     -3px -3px 5px #ddd8;
+  /* transition: all 150ms ease-in-out; 
+  cursor:default; */
 }
+
+/* .card:hover {
+  padding: 1.1rem;
+  width: 292px;
+  min-height: 302px;
+  box-shadow: 
+    3px 3px 5px #ddd,
+    3px -3px 5px #ddd,
+    -3px 3px 5px #ddd,
+    -3px -3px 5px #ddd;
+} */
 
 .card>h2 {
   font-weight:lighter;
@@ -46,7 +64,14 @@
   left: 195px;
 }
 
-@media(min-width:576px) {}
+@media(min-width:576px) {
+  .mainMarco {
+    padding: 6rem 2rem 1rem;
+  }
+  .mainMarco > h1{
+    font-size: 3rem;
+  }
+}
 
 
 @media(min-width:768px) {}

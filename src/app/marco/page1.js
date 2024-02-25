@@ -3,7 +3,7 @@
 // import { JSDOM } from 'jsdom';
 import { useEffect ,useState } from 'react';
 import Descripcion from './descripcion';
-import styles from './navbar.module.css';
+import styles from './marco.module.css';
 
 
 
