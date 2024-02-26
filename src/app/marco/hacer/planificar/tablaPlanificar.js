@@ -9,54 +9,63 @@ const lienzos = [
     src: "/images/lienzos/lienzoValores.png",
     name: "Lienzo de Valores.png",
     href: "/images/lienzos/lienzoValores.png",
+    color: "#e69500",
   },
   {
     title: "Lienzo de Acuerdos",
     src: "/images/lienzos/lienzoAcuerdos.png",
     name: "Lienzo de Acuerdos.png",
     href: "/images/lienzos/lienzoAcuerdos.png",
+    color: "#e69500",
   },
   {
     title: "Lienzo de Narrativas culturales",
     src: "/images/lienzos/lienzoNarrativasCulturales.png",
     name: "Lienzo de Narrativas Culturales.png",
     href: "/images/lienzos/lienzoNarrativasCulturales.png",
+    color: "#e69500",
   },
   {
     title: "Lienzo de descubrimiento de desafios",
     src: "/images/lienzos/lienzoDescubrimientoDesafio.png",
     name: "Lienzo de descubrimiento de desafios.png",
     href: "/images/lienzos/lienzoDescubrimientoDesafio.png",
+    color: "#e69500",
   },
   {
     title: "Lienzo de habilidades ciudadanas",
     src: "/images/lienzos/lienzoHabilidadesCiudadanas.png",
     name: "Lienzo de habilidades ciudadanas.png",
     href: "/images/lienzos/lienzoHabilidadesCiudadanas.png",
+    color: "#e69500",
   },
   {
     title: "Lienzo de mapeo de los procesos",
     src: "/images/lienzos/lienzoMapeoProcesos.png",
     name: "Lienzo de mapeo de los procesos.png",
     href: "/images/lienzos/lienzoMapeoProcesos.png",
+    color: "#e69500",
   },
   {
     title: "Lienzo de Objetivos y Resultados",
     src: "/images/lienzos/lienzoDefinicionObjetivos.png",
     name: "Lienzo de Objetivos y Resultados.png",
     href: "/images/lienzos/lienzoDefinicionObjetivos.png",
+    color: "#e69500",
   },
   {
     title: "Lienzo de experiencias formativa",
     src: "/images/lienzos/lienzoExperienciaFormativa.png",
     name: "Lienzo de experiencias formativa.png",
     href: "/images/lienzos/lienzoExperienciaFormativa.png",
+    color: "#e69500",
   },
   {
     title: "Lienzo de Mapeo de Acciones",
     src: "/images/lienzos/lienzoMapeoAcciones.png",
     name: "Lienzo de Mapeo de Acciones.png",
     href: "/images/lienzos/lienzoMapeoAcciones.png",
+    color: "#e69500",
   },
 ]
 
@@ -64,24 +73,22 @@ const lienzos = [
 export default function TablaPlanificar() {
 
   return (
-    <Table className="striped bordered responsive size='xl' ">
+    <Table className="striped bordered responsive size='xl'" >
       <thead>
         <tr>
           <th style={{ width: '30%' }} >Objetivos</th>
-          <th style={{ width: '35%' }} >Entregable</th>
+          <th style={{ width: '30%' }} >Entregable</th>
           <th>Prácticas</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Socializar el contenido de la guia y realizar acuerdo de trabajo para su implementación</td>
-          <td>Taller de Socialización y Acuerdos de Trabajo</td>
-          <td>
-            <ul>
-              <li>Pautas para facilitar el taller de sensibilización</li>
-              <li>< Lienzo data={lienzos[0]} /></li>
-              <li>< Lienzo data={lienzos[1]} /></li>
-            </ul>
+          <td style={{backgroundColor:"#e9cfa2"}} >Taller de Socialización y Acuerdos de Trabajo</td>
+          <td style={{backgroundColor:"#e9cfa2"}} >
+            <p style={{margin: ".1rem .5rem"}} >Pautas para facilitar el taller de sensibilización</p>
+            < Lienzo data={lienzos[0]} color={'#e69500'}/>
+            < Lienzo data={lienzos[1]} />
           </td>
         </tr>
         <tr>
@@ -91,8 +98,10 @@ export default function TablaPlanificar() {
         </tr>
         <tr>
           <td>Nivelacion de Habilidades en Calidad</td>
-          <td>Taller de capacitación en Calidad</td>
-          <td>Taller de capacitación </td>
+          <td style={{backgroundColor:"#e9cfa2"}} >Taller de capacitación en Calidad</td>
+          <td style={{backgroundColor:"#e9cfa2"}} >
+            <p >Taller de capacitación </p>
+          </td>
         </tr>
         <tr>
           <td>Realizar un diagnostico y definir el desafio a trabajar</td>
@@ -101,8 +110,8 @@ export default function TablaPlanificar() {
         </tr>
         <tr>
           <td>Identificar Habilidades ciudadanas a desarrollar</td>
-          <td>Habilidades ciudadanas a desarrollar</td>
-          <td>< Lienzo data={lienzos[4]} /></td>
+          <td style={{backgroundColor:"#e9cfa2"}} >Habilidades ciudadanas a desarrollar</td>
+          <td style={{backgroundColor:"#e9cfa2"}} >< Lienzo data={lienzos[4]} /></td>
         </tr>
         <tr>
           <td>Mapear los procesos de Gestion Institucional</td>
@@ -111,12 +120,10 @@ export default function TablaPlanificar() {
         </tr>
         <tr>
           <td>Definir Objetivos y Resultados esperados</td>
-          <td> Objetivos y Resultados esperados y experiencia formativa</td>
-          <td>
-            <ul>
-              <li>< Lienzo data={lienzos[6]} /></li>
-              <li>< Lienzo data={lienzos[7]} /></li>
-            </ul>
+          <td style={{backgroundColor:"#e9cfa2"}} > Objetivos y Resultados esperados y experiencia formativa</td>
+          <td style={{backgroundColor:"#e9cfa2"}} >
+            < Lienzo data={lienzos[6]} />
+            < Lienzo data={lienzos[7]} />
           </td>
         </tr>
         <tr>

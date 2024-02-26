@@ -2,7 +2,7 @@ import TablaPlanificar from './tablaPlanificar';
 
 export default function Planificar() {
   return (
-    <main style={{padding:"6rem 2rem 1rem"}}>
+    <main style={{ padding: "6rem 2rem 1rem" }}>
       <h3> Planificar a Conciencia</h3>
       <p>
         Todas las actividades de la primera etapa se realizan mediante la
@@ -12,7 +12,10 @@ export default function Planificar() {
         talleres de capacitación para nivelar el conocimiento sobre la guía y la
         temática de calidad.
       </p>
-      <TablaPlanificar />
+      <p>Se planifica la <b>integración de la guía</b> a la gestión institucional</p>
+      <div style={{ border: "3px solid #e69500" }}  >
+        <TablaPlanificar />
+      </div>
     </main>
   );
 }

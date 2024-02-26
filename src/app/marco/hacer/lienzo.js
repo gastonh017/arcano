@@ -12,8 +12,8 @@ function Lienzo({ data }) {
     <div>
       <div className={styles.lienzContainer}>
         <p>{data.title}</p>
-        <button onClick={() => setShow(true)} className={styles.btn} >
-          <Image src="/images/svg/acceder_lienzos.png" width={15} height={15} alt="acceder" >
+        <button onClick={() => setShow(true)} style={{backgroundColor:`${data.color}`}}  className={styles.btn} >
+          <Image src="/images/svg/acceder_lienzos.png" width={12} height={12} alt="acceder" >
           </Image>
         </button>
       </div>

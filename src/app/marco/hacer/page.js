@@ -107,12 +107,12 @@ export default function Hacer() {
             />
           </Link> */}
           {cards.map((el, id) =>
-            <Link href={el.href} style={{ backgroundColor: `${el.bkgColor}`, borderColor:`${el.colorText}` , border:`2px solid ${el.colorText}`}} key={id} className={styles.card}>
+            <Link href={el.href} style={{ backgroundColor: `${el.bkgColor}`, borderColor: `${el.colorText}`, border: `2px solid ${el.colorText}` }} key={id} className={styles.card}>
               <p style={{ color: `${el.colorText}` }}>{el.text}</p>
               <Image
                 src={el.src}
-                width={210}
-                height={447}
+                width={202}
+                height={441}
                 alt='ciclo'
                 className={styles.imgAvatar}
               />
@@ -125,12 +125,32 @@ export default function Hacer() {
       <section className={styles.planningSection}>
         <h3 >Planificar a Conciencia</h3>
         <p>
-          Todas las actividades de la primera etapa se realizan mediante la
-          facilitación de talleres colaborativos o espacios de trabajo creativos
-          en los que el equipo kaizen completa distintos lienzos que permiten
-          plasmar las ideas y acuerdos en elementos visuales y, también de
-          talleres de capacitación para nivelar el conocimiento sobre la guía y la
-          temática de calidad.
+          Todas las actividades de la primera etapa se realizan mediante la facilitación de talleres colaborativos o espacios de trabajo creativos en los que el equipo kaizen completa distintos lienzos que permiten plasmar las ideas y acuerdos en elementos visuales y, también de talleres de capacitación para nivelar el conocimiento sobre la guía y la temática de calidad.
+        </p>
+      </section>
+
+      <section className={styles.planningSection}>
+        <h3 >Hacer de forma iterativa e incremental</h3>
+        <p>
+          En base al desafío acordado en la etapa anterior se lleva a cabo plan de trabajo en iteraciones y crea rutinas y procedimientos.
+        </p>
+        <p>
+          La puesta en marcha se realiza en breves ciclos de tiempo en los que se espera lograr un pequeño incremento de valor en base al cual se realizarán las mejoras para la siguiente iteración.
+        </p>
+
+      </section>
+
+      <section className={styles.planningSection}>
+        <h3 >Verificar que haya mejora y entrega de valor</h3>
+        <p>
+        La institución identifica las métricas que le permitirán visualizar las oportunidades de mejora y evaluar la entrega de valor. Se plantean dos grupos de métricas. Por un lado, aquellas que reflejan el <b>grado de madurez</b> alcanzado por el estudiante en el desarrollo de una habilidad en un determinado periodo. Por el otro, aquellas que reflejan las <b>mejoras en la organización de la escuela</b>.
+        </p>
+      </section>
+
+      <section className={styles.planningSection}>
+        <h3 >Actuar para expandir</h3>
+        <p>
+        En base a los resultados de la etapa anterior se realiza un análisis en retrospectiva de las mejoras alcanzadas y los nuevos desafíos y en base a ello se decide iniciar o no una nueva implementación de la guía en un nuevo desafío acordado.
         </p>
       </section>
 

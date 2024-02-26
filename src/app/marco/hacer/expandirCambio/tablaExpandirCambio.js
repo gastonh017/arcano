@@ -10,18 +10,21 @@ const lienzos = [
     src: "/images/lienzos/lienzoMejoraContinua.png",
     name: "Lienzo para facilitar el evento de mejora continua.png",
     href: "/images/lienzos/lienzoMejoraContinua.png",
+    color: "#00b0f0",
   },
   {
     title: "Mural de kudos de reconocimientos",
     src: "/images/lienzos/muralDeKudos.png",
     name: "Mural de kudos de reconocimientos.png",
     href: "/images/lienzos/muralDeKudos.png",
+    color: "#00b0f0",
   },
   {
     title: "Lienzo para el mapeo de acciones",
     src: "/images/lienzos/lienzoMapeoAcciones.png",
     name: "Lienzo para el mapeo de acciones.png",
     href: "/images/lienzos/lienzoMapeoAcciones.png",
+    color: "#00b0f0",
   }
 ]
 
@@ -40,8 +43,8 @@ export default function TablaExpandirCambio() {
 
         <tr>
           <td>Identificar las mejoras para la siguiente iteración </td>
-          <td>Nuevas ideas que se colocan en el lienzo de visualización del trabajo </td>
-          <td>< Lienzo data={lienzos[0]} /></td>
+          <td style={{backgroundColor:"#c9e9f4"}} >Nuevas ideas que se colocan en el lienzo de visualización del trabajo </td>
+          <td style={{backgroundColor:"#c9e9f4"}} >< Lienzo data={lienzos[0]} /></td>
         </tr>
         <tr>
           <td>Reconocimientos a colegas, equipos y estudiantes  </td>
@@ -50,8 +53,8 @@ export default function TablaExpandirCambio() {
         </tr>
         <tr>
           <td>Realizar una hoja de ruta de mantenimiento en caso de no continuar con la implementación</td>
-          <td>Nueva hoja de ruta de mantenimiento  </td>
-          <td>< Lienzo data={lienzos[2]} /></td>
+          <td style={{backgroundColor:"#c9e9f4"}} >Nueva hoja de ruta de mantenimiento  </td>
+          <td style={{backgroundColor:"#c9e9f4"}} >< Lienzo data={lienzos[2]} /></td>
         </tr>
 
       </tbody>
