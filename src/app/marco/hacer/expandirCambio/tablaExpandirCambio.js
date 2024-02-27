@@ -7,7 +7,7 @@ import Lienzo from '../lienzo'
 const lienzos = [
   {
     title: "Lienzo para facilitar el evento de mejora continua",
-    src: "/images/lienzos/lienzoMejoraContinua.png",
+    src: "/images/lienzos/lienzoActuarMejoraContinua.png",
     name: "Lienzo para facilitar el evento de mejora continua.png",
     href: "/images/lienzos/lienzoMejoraContinua.png",
   },
@@ -19,7 +19,7 @@ const lienzos = [
   },
   {
     title: "Lienzo para el mapeo de acciones",
-    src: "/images/lienzos/lienzoMapeoAcciones.png",
+    src: "/images/lienzos/lienzoActuarMapeoAcciones.png",
     name: "Lienzo para el mapeo de acciones.png",
     href: "/images/lienzos/lienzoMapeoAcciones.png",
   }

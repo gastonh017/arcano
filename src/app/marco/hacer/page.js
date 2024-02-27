@@ -61,6 +61,14 @@ export default function Hacer() {
           incremento de valor en base al cual se realizarán las mejoras para la
           siguiente iteración.
         </p>
+        <p>
+          Todas las actividades se realizan mediante la
+          facilitación de talleres colaborativos o espacios de trabajo creativos
+          en los que el equipo kaizen completa distintos lienzos, que permiten
+          plasmar las ideas y acuerdos en elementos visuales, y también de
+          talleres de capacitación para nivelar el conocimiento sobre la guía y la
+          temática de calidad.
+        </p>
         <div className={styles.stepsCardsContainer}>
 
           {/* <Link href={cards[0].href} style={{ backgroundColor: `${cards[0].bkgColor}` }} className={styles.card1}>
@@ -122,17 +130,10 @@ export default function Hacer() {
         </div>
       </section>
 
-      <section className={styles.planningSection}>
+      {/* <section className={styles.planningSection}>
         <h3 >Planificar a Conciencia</h3>
-        <p>
-          Todas las actividades de la primera etapa se realizan mediante la
-          facilitación de talleres colaborativos o espacios de trabajo creativos
-          en los que el equipo kaizen completa distintos lienzos que permiten
-          plasmar las ideas y acuerdos en elementos visuales y, también de
-          talleres de capacitación para nivelar el conocimiento sobre la guía y la
-          temática de calidad.
-        </p>
-      </section>
+        
+      </section> */}
 
     </main>
   );

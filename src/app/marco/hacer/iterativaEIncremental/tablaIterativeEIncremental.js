@@ -6,43 +6,43 @@ import Lienzo from '../lienzo'
 const lienzos = [
   {
     title: "Lienzo de visualización del trabajo",
-    src: "/images/lienzos/lienzoVisualizacionDelTrabajo.png",
+    src: "/images/lienzos/lienzoVisualizacion.png",
     name: "Lienzo de visualización del trabajo.png",
     href: "/images/lienzos/lienzoVisualizacionDelTrabajo.png",
   },
   {
     title: "Lienzo para facilitar la retrospectiva",
-    src: "/images/lienzos/lienzoFacilitarRetrospectiva.png",
+    src: "/images/lienzos/lienzoRetrospectivas.png",
     name: "Lienzo para facilitar la retrospectiva.png",
     href: "/images/lienzos/lienzoFacilitarRetrospectiva.png",
   },
   {
     title: "Lienzo para la implementación de 5S (a)",
-    src: "/images/lienzos/lienzoimplementacion5Sa.png",
+    src: "/images/lienzos/lienzoimplementar5s.png",
     name: "Lienzo para la implementación de 5S (a).png",
     href: "/images/lienzos/lienzoimplementacion5Sa.png",
   },
   {
     title: "Lienzo para realizar el inventario y clasificar los objetos 5S (b)",
-    src: "/images/lienzos/lienzoimplementacion5Sb.png",
+    src: "/images/lienzos/lienzoClasificacion.png",
     name: "Lienzo para realizar el inventario y clasificar los objetos 5S (b).png",
     href: "/images/lienzos/lienzoimplementacion5Sb.png",
   },
   {
     title: "Lienzo para la creación del cronograma de limpieza 5S (c)",
-    src: "/images/lienzos/lienzoimplementacion5Sc.png",
+    src: "/images/lienzos/lienzoLimpieza.png",
     name: "Lienzo para la creación del cronograma de limpieza 5S (c).png",
     href: "/images/lienzos/lienzoimplementacion5Sc.png",
   },
   {
     title: "Lienzo para facilitar la retrospectiva 5S(d)",
-    src: "/images/lienzos/lienzoimplementacion5Sd.png",
+    src: "/images/lienzos/lienzoRetrospectivas.png",
     name: "Lienzo para facilitar la retrospectiva 5S(d).png",
     href: "/images/lienzos/lienzoMapeoProcesod.png",
   },
   {
     title: "Lienzo de Mejora continua 5S(e)",
-    src: "/images/lienzos/lienzoimplementacion5Se.png",
+    src: "/images/lienzos/lienzoMejoraContinua.png",
     name: "Lienzo de Mejora continua 5S(e).png",
     href: "/images/lienzos/lienzoimplementacion5Se.png",
   }

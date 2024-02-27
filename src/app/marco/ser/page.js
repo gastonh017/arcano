@@ -33,11 +33,16 @@ export default function Protagonistas() {
       <br />
       <h2>Protagonistas</h2>
       <ul>
-      <li>Equipo Kaizen</li>
-        <li>Facilitadores</li>
-        <li>Educadores</li>
-        <li>Estudiantes</li>
-        <li>Comunidad de Referencia</li>
+      <li>Equipo Kaizen: </li>
+      <p>Conformado por los directores, vicedirectores y secretarios. Este equipo impulsa y se compromete con la implementación de esta guía.</p>
+        <li>Facilitadores:</li> 
+        <p>Están formados en el entendimiento y uso de las prácticas que propone la guía y acompañan y facilitan su implementación.</p>
+        <li>Educadores y equipo de orientación voccional: </li>
+        <p> Facilitan el proceso de desarrollo de las habilidades ciudadanas a través de las prácticas creadas en colaboración con el equipo kaizen en el contexto áulico.</p>
+        <li>Estudiantes:</li>
+        <p>Son protagonistas activos del proceso de aprendizaje de las habilidades ciudadanas. Participan activamente de la experiencia escolar de la implementación de la guía</p>
+        <li>Comunidad de Referencia: </li>
+        <p>Incluye a las familias que acompañan la trayectoria educativa. También a los actores sociales que interactúan y acompañan las iniciativas que el equipo kaizen emprenda a partir de la guía.</p>
       </ul>
       <br />
       <h2>Valores</h2>

@@ -1,0 +1,35 @@
+/* --colorPink01:'#ec4e70'; 
+--colorPink02:'#f0caca';
+--colorPink03:'#f6e0e0';
+--colorViolet01:'#794dff';
+--colorViolet02:'#c7baf2';
+--colorViolet03:'#dfd7f7';
+--colorBlue01:'#00b0f0';
+--colorBlue02:'#a2d8ec';
+--colorBlue03:'#c9e9f4';
+--colorAmber01:'#e69500';
+--colorAmber02:'#e9cfa2';
+--colorAmber03:'#f2e3c9';
+--colorGren01:'#2cbc9d';
+--colorGren02:'#7dd0be';
+--colorGren03:'#ace1d6';
+--color11:'#e9f3f3'
+*/
+.mainNosotros {
+ background-color:#f6e0e0;
+}
+
+.titulo {
+  padding: 1rem 1rem 2rem;
+  color: #333;
+  background-color: #f6e0e0;
+  font-size: 2.5rem;
+}
+
+.parrafo {
+  font-size: 1.8rem;
+  text-align: justify;
+  padding: 1rem 0;
+  padding-right: 10vw;
+  width: 100%;
+}

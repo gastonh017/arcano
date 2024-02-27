@@ -6,25 +6,25 @@ import Lienzo from '../lienzo'
 const lienzos = [
   {
     title: "Lienzo de Valores",
-    src: "/images/lienzos/lienzoValores.png",
+    src: "/images/lienzos/lienzoValores2.png",
     name: "Lienzo de Valores.png",
     href: "/images/lienzos/lienzoValores.png",
   },
   {
     title: "Lienzo de Acuerdos",
-    src: "/images/lienzos/lienzoAcuerdos.png",
+    src: "/images/lienzos/lienzoAcuerdos2.png",
     name: "Lienzo de Acuerdos.png",
     href: "/images/lienzos/lienzoAcuerdos.png",
   },
   {
     title: "Lienzo de Narrativas culturales",
-    src: "/images/lienzos/lienzoNarrativasCulturales.png",
+    src: "/images/lienzos/lienzoNarrativasCulturales2.png",
     name: "Lienzo de Narrativas Culturales.png",
     href: "/images/lienzos/lienzoNarrativasCulturales.png",
   },
   {
     title: "Lienzo de descubrimiento de desafios",
-    src: "/images/lienzos/lienzoDescubrimientoDesafio.png",
+    src: "/images/lienzos/lienzoDescubrimientoDesafios.png",
     name: "Lienzo de descubrimiento de desafios.png",
     href: "/images/lienzos/lienzoDescubrimientoDesafio.png",
   },
@@ -42,7 +42,7 @@ const lienzos = [
   },
   {
     title: "Lienzo de Objetivos y Resultados",
-    src: "/images/lienzos/lienzoDefinicionObjetivos.png",
+    src: "/images/lienzos/lienzoDefinicionObjetivosResultados.png",
     name: "Lienzo de Objetivos y Resultados.png",
     href: "/images/lienzos/lienzoDefinicionObjetivos.png",
   },

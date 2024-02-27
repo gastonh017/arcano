@@ -18,9 +18,9 @@ const lienzosVerificar = [
   },
   {
     title: "Lienzo de facilitación de Taller de Mejora Continua",
-    src: "/images/lienzos/lienzoFacilitacionMejora.png",
+    src: "/images/lienzos/lienzoVerificarMejora.png",
     name: "Lienzo de Facilitacion de Mejora.png",
-    href: "/images/lienzos/lienzoFacilitacionMejora.png",
+    href: "/images/lienzos/lienzoVerificarnMejora.png",
   }
 ]
 

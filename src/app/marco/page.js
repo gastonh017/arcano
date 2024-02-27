@@ -75,24 +75,24 @@ const marco = [
     contentList: ['MOTIVACIÓN', 'FLUJO', 'VALORES'],
     listStyle: 'disc',
   },
+  // {
+  //   id: 10,
+  //   text: 'La <b>motivación</b> es acompañar a las instituciones educativas a través de la mejora continua de su gestión organizacional para que, a través de un conjunto de prácticas, potencien el aprendizaje de las habilidades ciudadanas en los estudiantes. ',
+  //   colorCard: '#794dff',
+  //   list: false,
+  //   contentList: [],
+  //   listStyle: 'disc',
+  // },
+  // {
+  //   id: 11,
+  //   text: 'Los <b>valores</b> son las cualidades que son importantes poner en juego al momento de integrar la guía a la gestión institucional:',
+  //   colorCard: '#00b0f0',
+  //   list: true,
+  //   contentList: ['El respeto genuino de los derechos de los niños, niñas y adolescentes es el primer paso para el cambio', 'El compromiso con la mejora continua es un valor fundamental para el crecimiento y la innovación.', 'Promover la mejora continua en procesos iterativos e incrementales es la clave para desarrollo', 'La identidad cultural es un factor fundamental en el concepto de ciudadanía y las narrativas culturales.'],
+  //   listStyle: 'decimal',
+  // },
   {
     id: 10,
-    text: 'La <b>motivación</b> es acompañar a las instituciones educativas a través de la mejora continua de su gestión organizacional para que, a través de un conjunto de prácticas, potencien el aprendizaje de las habilidades ciudadanas en los estudiantes. ',
-    colorCard: '#794dff',
-    list: false,
-    contentList: [],
-    listStyle: 'disc',
-  },
-  {
-    id: 11,
-    text: 'Los <b>valores</b> son las cualidades que son importantes poner en juego al momento de integrar la guía a la gestión institucional:',
-    colorCard: '#00b0f0',
-    list: true,
-    contentList: ['El respeto genuino de los derechos de los niños, niñas y adolescentes es el primer paso para el cambio', 'El compromiso con la mejora continua es un valor fundamental para el crecimiento y la innovación.', 'Promover la mejora continua en procesos iterativos e incrementales es la clave para desarrollo', 'La identidad cultural es un factor fundamental en el concepto de ciudadanía y las narrativas culturales.'],
-    listStyle: 'decimal',
-  },
-  {
-    id: 12,
     text: 'El <b>flujo de valor</b> son las etapas para la implementación de la guía: Planificar a conciencia, Hacer en forma iterativa e incremental, verificar que haya mejora y entrega de valor y actuar para expandir el cambio. ',
     colorCard: '#e69500',
     list: false,
@@ -100,7 +100,7 @@ const marco = [
     listStyle: 'disc',
   },
   {
-    id: 13,
+    id: 11,
     text: 'Los protagonistas son:',
     colorCard: '#ec4e70',
     list: true,
@@ -108,7 +108,7 @@ const marco = [
     listStyle: 'decimal',
   },
   {
-    id: 14,
+    id: 12,
     text: '<b>Equipo kaizen</b>: Conformado por los directores, vicedirectores y secretarios. Este equipo impulsa y se compromete con la implementación de esta guía. ',
     colorCard: '#794dff',
     list: false,
@@ -116,7 +116,7 @@ const marco = [
     listStyle: 'disc',
   },
   {
-    id: 15,
+    id: 13,
     text: '<b>Educadores y equipo de orientación vocacional</b>: Facilitan el proceso de desarrollo de las habilidades ciudadanas a través de las prácticas creadas en colaboración con el equipo kaizen en el contexto áulico. ',
     colorCard: '#00b0f0',
     list: false,
@@ -124,7 +124,7 @@ const marco = [
     listStyle: 'disc',
   },
   {
-    id: 16,
+    id: 14,
     text: '<b>Estudiantes</b>: Son protagonistas activos del proceso de aprendizaje de las habilidades ciudadanas. Participan activamente de la experiencia escolar de la implementación de la guía',
     colorCard: '#e69500',
     list: false,
@@ -132,7 +132,7 @@ const marco = [
     listStyle: 'disc',
   },
   {
-    id: 17,
+    id: 15,
     text: '<b>Comunidad</b>: Incluye a las familias que acompañan la trayectoria educativa. También a los actores sociales que interactúan y acompañan las iniciativas que el equipo kaizen emprenda a partir de la guía.',
     colorCard: '#ec4e70',
     list: false,
@@ -140,7 +140,7 @@ const marco = [
     listStyle: 'disc',
   },
   {
-    id: 18,
+    id: 16,
     text: '<b>Facilitadores</b>: Están formados en el entendimiento y uso de las prácticas que propone la guía y acompañan y facilitan su implementación.',
     colorCard: '#794dff',
     list: false,
@@ -148,7 +148,7 @@ const marco = [
     listStyle: 'disc',
   },
   {
-    id: 19,
+    id: 17,
     text: '<b>Los ARCANOS</b>: Los arcanos acompañan el proceso de implementación.',
     colorCard: '#00b0f0',
     list: false,
