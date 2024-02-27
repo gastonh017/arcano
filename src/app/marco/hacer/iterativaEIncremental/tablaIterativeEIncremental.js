@@ -6,45 +6,59 @@ import Lienzo from '../lienzo'
 const lienzos = [
   {
     title: "Lienzo de visualización del trabajo",
-    src: "/images/lienzos/lienzoVisualizacion.png",
+    description: "Planificar iteración, gestionar impedimentos & recibir retroalimentación",
+    src: "/images/lienzos/02-hacerIterEInc/lienzoVisualizacionDelTrabajo01.png",
     name: "Lienzo de visualización del trabajo.png",
-    href: "/images/lienzos/lienzoVisualizacionDelTrabajo.png",
+    href: "/images/lienzos/02-hacerIterEInc/lienzoVisualizacionDelTrabajo01.png",
+    color: "#794dff",
   },
   {
     title: "Lienzo para facilitar la retrospectiva",
-    src: "/images/lienzos/lienzoRetrospectivas.png",
+    description: "Realizar retrospectiva",
+    src: "/images/lienzos/02-hacerIterEInc/lienzoFacilitarRetrospectiva01.png",
     name: "Lienzo para facilitar la retrospectiva.png",
-    href: "/images/lienzos/lienzoFacilitarRetrospectiva.png",
+    href: "/images/lienzos/02-hacerIterEInc/lienzoFacilitarRetrospectiva01.png",
+    color: "#794dff",
   },
   {
     title: "Lienzo para la implementación de 5S (a)",
-    src: "/images/lienzos/lienzoimplementar5s.png",
+    description: "Definir rutinas de trabajo con foco en la cultura de la calidad",
+    src: "/images/lienzos/02-hacerIterEInc/lienzoimplementacion5Sa01.png",
     name: "Lienzo para la implementación de 5S (a).png",
-    href: "/images/lienzos/lienzoimplementacion5Sa.png",
+    href: "/images/lienzos/02-hacerIterEInc/lienzoimplementacion5Sa01.png",
+    color: "#794dff",
   },
   {
     title: "Lienzo para realizar el inventario y clasificar los objetos 5S (b)",
-    src: "/images/lienzos/lienzoClasificacion.png",
+    description: "Definir rutinas de trabajo con foco en la cultura de la calidad",
+    src: "/images/lienzos/02-hacerIterEInc/lienzoimplementacion5Sb01.png",
     name: "Lienzo para realizar el inventario y clasificar los objetos 5S (b).png",
-    href: "/images/lienzos/lienzoimplementacion5Sb.png",
+    href: "/images/lienzos/02-hacerIterEInc/lienzoimplementacion5Sb01.png",
+    color: "#794dff",
   },
   {
     title: "Lienzo para la creación del cronograma de limpieza 5S (c)",
-    src: "/images/lienzos/lienzoLimpieza.png",
+    description: "Definir rutinas de trabajo con foco en la cultura de la calidad",
+    src: "/images/lienzos/02-hacerIterEInc/lienzoimplementacion5Sc01.png",
     name: "Lienzo para la creación del cronograma de limpieza 5S (c).png",
-    href: "/images/lienzos/lienzoimplementacion5Sc.png",
+    href: "/images/lienzos/02-hacerIterEInc/lienzoimplementacion5Sc01.png",
+    color: "#794dff",
   },
   {
     title: "Lienzo para facilitar la retrospectiva 5S(d)",
-    src: "/images/lienzos/lienzoRetrospectivas.png",
+    description: "Realizar retrospectiva",
+    src: "/images/lienzos/02-hacerIterEInc/lienzoimplementacion5Sd01.png",
     name: "Lienzo para facilitar la retrospectiva 5S(d).png",
-    href: "/images/lienzos/lienzoMapeoProcesod.png",
+    href: "/images/lienzos/02-hacerIterEInc/lienzoMapeoProcesod01.png",
+    color: "#794dff",
   },
   {
     title: "Lienzo de Mejora continua 5S(e)",
-    src: "/images/lienzos/lienzoMejoraContinua.png",
+    description: "Definir rutinas de trabajo con foco en la cultura de la calidad",
+    src: "/images/lienzos/02-hacerIterEInc/lienzoimplementacion5Se01.png",
     name: "Lienzo de Mejora continua 5S(e).png",
-    href: "/images/lienzos/lienzoimplementacion5Se.png",
+    href: "/images/lienzos/02-hacerIterEInc/lienzoimplementacion5Se01.png",
+    color: "#794dff",
   }
 ]
 
@@ -55,8 +69,8 @@ export default function TablaIterativaEIncremental() {
     <Table className="striped bordered responsive size='xl' ">
       <thead>
         <tr>
-          <th style={{ width: '20%' }} >Objetivos</th>
-          <th style={{ width: '35%' }} >Entregable</th>
+          <th style={{ width: '30%' }} >Objetivos</th>
+          <th style={{ width: '30%' }} >Entregable</th>
           <th>Prácticas</th>
         </tr>
       </thead>
@@ -64,8 +78,8 @@ export default function TablaIterativaEIncremental() {
 
         <tr>
           <td>Planificar la iteración</td>
-          <td>Repositorio de ítems de trabajo e ideas</td>
-          <td rowspan="3" style={{ padding: '5rem .5rem' }}>< Lienzo data={lienzos[0]} /></td>
+          <td style={{ backgroundColor: "#c7baf2" }}>Repositorio de ítems de trabajo e ideas</td>
+          <td rowspan="3" style={{ padding: '5rem .5rem', backgroundColor: "#c7baf2" }}>< Lienzo data={lienzos[0]} /></td>
         </tr>
         <tr>
           <td>Gestionar los impedimentos</td>
@@ -73,7 +87,7 @@ export default function TablaIterativaEIncremental() {
         </tr>
         <tr>
           <td>Recibir retroalimentación de los actores impactados</td>
-          <td>Retroalimentación de los actores impactados por la implementación de la guía</td>
+          <td style={{ backgroundColor: "#c7baf2" }} >Retroalimentación de los actores impactados por la implementación de la guía</td>
         </tr>
 
         <tr>
@@ -83,15 +97,13 @@ export default function TablaIterativaEIncremental() {
         </tr>
         <tr>
           <td>Definir rutinas de trabajo con foco en la cultura de la calidad</td>
-          <td>Rutinas, procedimientos y estándares de calidad</td>
-          <td>
-            <ul>
-              <li> <Lienzo data={lienzos[2]} /> </li>
-              <li> <Lienzo data={lienzos[3]} /> </li>
-              <li> <Lienzo data={lienzos[4]} /> </li>
-              <li> <Lienzo data={lienzos[5]} /> </li>
-              <li> <Lienzo data={lienzos[6]} /> </li>
-            </ul>
+          <td style={{ backgroundColor: "#c7baf2" }} >Rutinas, procedimientos y estándares de calidad</td>
+          <td style={{ backgroundColor: "#c7baf2" }} >
+            <Lienzo data={lienzos[2]} />
+            <Lienzo data={lienzos[3]} />
+            <Lienzo data={lienzos[4]} />
+            <Lienzo data={lienzos[5]} />
+            <Lienzo data={lienzos[6]} />
           </td>
         </tr>
 

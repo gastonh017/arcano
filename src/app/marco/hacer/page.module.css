@@ -130,7 +130,7 @@
 }
 
 /* -------------- lienzos -------------------- */
-.lienzContainer {
+.lienzContainer{
   margin: .1rem .5rem;
   display: flex;
   flex-flow: row wrap;
@@ -141,11 +141,27 @@
   margin: .5rem 0;
 }
 
+.parametrosContainer {
+  margin: 3rem 0;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.parametros{
+  width: 18%;
+  min-height: 6rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
 /* botones de lienzos */
 .btn {
   background-color: rgb(238, 255, 140);
   margin: .1rem .5rem;
-  padding: .0rem .2rem;
+  padding: .0rem .2rem .0rem .3rem;
   border-radius: 5px;
   border: solid 1px rgba(128, 128, 128, 0.644);
   transition: all 150ms ease-in-out;

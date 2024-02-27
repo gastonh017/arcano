@@ -6,21 +6,27 @@ import Lienzo from '../lienzo'
 const lienzosVerificar = [
   {
     title: "Rubrica de Madurez",
-    src: "/images/lienzos/rubricaMadurez.png",
+    description: "Realizar rúbrica de madurez.",
+    src: "/images/lienzos/03-verificar/rubricaMadurez01.png",
     name: "Rubrica de Madurez.png",
-    href: "/images/lienzos/rubricaMadurez.png",
+    href: "/images/lienzos/03-verificar/rubricaMadurez01.png",
+    color: "#ec4e70",
   },
   {
     title: "Radiadores de Informacion",
-    src: "/images/lienzos/lienzoRadiadores.png",
+    description: "Realizar matriz de radiadores de información",
+    src: "/images/lienzos/03-verificar/lienzoRadiadores01.png",
     name: "Radiadores de Informacion.png",
-    href: "/images/lienzos/lienzoRadiadores.png",
+    href: "/images/lienzos/03-verificar/lienzoRadiadores01.png",
+    color: "#ec4e70",
   },
   {
     title: "Lienzo de facilitación de Taller de Mejora Continua",
-    src: "/images/lienzos/lienzoVerificarMejora.png",
+    description: "Lienzo de radiadores de información",
+    src: "/images/lienzos/03-verificar/lienzoMejoraContinua01.png",
     name: "Lienzo de Facilitacion de Mejora.png",
-    href: "/images/lienzos/lienzoVerificarnMejora.png",
+    href: "/images/lienzos/03-verificar/lienzoMejoraContinua01.png",
+    color: "#ec4e70",
   }
 ]
 
@@ -31,15 +37,15 @@ function TablaVerificar() {
       <thead>
         <tr>
         <th style={{ width: '30%' }} >Objetivos</th>
-          <th style={{ width: '35%' }} >Entregable</th>
+          <th style={{ width: '30%' }} >Entregable</th>
           <th>Prácticas</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>Realizar Rúbrica de Madurez</td>
-          <td>Nivel de madurez en el desarrollo de habilidades</td>
-          <td>
+          <td style={{backgroundColor:"#f6e0e0"}} >Nivel de madurez en el desarrollo de habilidades</td>
+          <td style={{backgroundColor:"#f6e0e0"}} >
             < Lienzo data={lienzosVerificar[0]} />
           </td>
         </tr>
@@ -50,8 +56,8 @@ function TablaVerificar() {
         </tr>
         <tr>
           <td>Realizar Eventos de Mejora Continua</td>
-          <td>Iniciativas de mejoras priorizadas</td>
-          <td>< Lienzo data={lienzosVerificar[2]} /></td>
+          <td style={{backgroundColor:"#f6e0e0"}} >Iniciativas de mejoras priorizadas</td>
+          <td style={{backgroundColor:"#f6e0e0"}} >< Lienzo data={lienzosVerificar[2]} /></td>
         </tr>
         
       </tbody>
