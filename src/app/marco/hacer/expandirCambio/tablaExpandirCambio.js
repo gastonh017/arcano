@@ -7,23 +7,26 @@ import Lienzo from '../lienzo'
 const lienzos = [
   {
     title: "Lienzo para facilitar el evento de mejora continua",
-    src: "/images/lienzos/lienzoMejoraContinua.png",
+    description: "Identificar las mejoras para el siguiente bucle de expansión como insumo para comenzar nuevamente con el ciclo.",
+    src: "/images/lienzos/04-expandir/lienzoFacilitacionMejora01.png",
     name: "Lienzo para facilitar el evento de mejora continua.png",
-    href: "/images/lienzos/lienzoMejoraContinua.png",
+    href: "/images/lienzos/04-expandir/lienzoFacilitacionMejora01.png",
     color: "#00b0f0",
   },
   {
     title: "Mural de kudos de reconocimientos",
-    src: "/images/lienzos/muralDeKudos.png",
+    description: "Reconocimientos a colegas, equipos y estudiantes.",
+    src: "/images/lienzos/04-expandir/muralDeKudos01.png",
     name: "Mural de kudos de reconocimientos.png",
-    href: "/images/lienzos/muralDeKudos.png",
+    href: "/images/lienzos/04-expandir/muralDeKudos01.png",
     color: "#00b0f0",
   },
   {
     title: "Lienzo para el mapeo de acciones",
-    src: "/images/lienzos/lienzoMapeoAcciones.png",
+    description: "Realizar una hoja de ruta de mantenimiento en caso de no continuar con la implementación.",
+    src: "/images/lienzos/04-expandir/lienzoMapeoAcciones01.png",
     name: "Lienzo para el mapeo de acciones.png",
-    href: "/images/lienzos/lienzoMapeoAcciones.png",
+    href: "/images/lienzos/04-expandir/lienzoMapeoAcciones01.png",
     color: "#00b0f0",
   }
 ]

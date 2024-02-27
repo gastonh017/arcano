@@ -6,23 +6,26 @@ import Lienzo from '../lienzo'
 const lienzosVerificar = [
   {
     title: "Rubrica de Madurez",
-    src: "/images/lienzos/rubricaMadurez.png",
+    description: "Realizar rúbrica de madurez.",
+    src: "/images/lienzos/03-verificar/rubricaMadurez01.png",
     name: "Rubrica de Madurez.png",
-    href: "/images/lienzos/rubricaMadurez.png",
+    href: "/images/lienzos/03-verificar/rubricaMadurez01.png",
     color: "#ec4e70",
   },
   {
     title: "Radiadores de Informacion",
-    src: "/images/lienzos/lienzoRadiadores.png",
+    description: "Realizar matriz de radiadores de información",
+    src: "/images/lienzos/03-verificar/lienzoRadiadores01.png",
     name: "Radiadores de Informacion.png",
-    href: "/images/lienzos/lienzoRadiadores.png",
+    href: "/images/lienzos/03-verificar/lienzoRadiadores01.png",
     color: "#ec4e70",
   },
   {
     title: "Lienzo de facilitación de Taller de Mejora Continua",
-    src: "/images/lienzos/lienzoFacilitacionMejora.png",
+    description: "Lienzo de radiadores de información",
+    src: "/images/lienzos/03-verificar/lienzoMejoraContinua01.png",
     name: "Lienzo de Facilitacion de Mejora.png",
-    href: "/images/lienzos/lienzoFacilitacionMejora.png",
+    href: "/images/lienzos/03-verificar/lienzoMejoraContinua01.png",
     color: "#ec4e70",
   }
 ]
