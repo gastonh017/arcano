@@ -189,12 +189,13 @@
 }
 
 .modalWindow {
-  height: 70vh;
-  width: max-content;
+  height: auto;
+  width: 100%;
 }
 
 .modalWindow1 {
-  height: 100%;
+  height: auto;
+  width: 100%;
 }
 
 
@@ -254,7 +255,7 @@
   }
 
   .parametrosContainer {
-    margin: 3rem 10vw;
+    margin: 3rem 8vw;
     flex-flow: row wrap;
     align-items:stretch;
   }
@@ -262,10 +263,7 @@
   .parametros{
     width: 23%;
     padding: 1rem;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: top;
-    align-items: center;
+
   }
 }
 
