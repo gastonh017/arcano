@@ -1,58 +1,25 @@
 'use client'
 import { useForm } from "react-hook-form";
-import { useRouter } from 'next/navigation';
 import { useForm as useFormspree } from "@formspree/react";
-import Swal from 'sweetalert2';
-//import styles from '@/app/contactanos/styles.module.css';
-import styles from '@/app/auth/styles.module.css';
-
-function mergeErrors(formspreeErrors, otherErrors = {}) {
-  // merge server side errors into react-hook-form errors
-  return {
-    // ...formspreeErrors.reduce(
-    //   (acc, cur) => ({
-    //     [cur.field || "form"]: {
-    //       message: (cur.field ? "This " : "") + cur.message
-    //     },
-    //     ...acc
-    //   }),
-    //   {}
-    // ),
-    ...otherErrors
-  };
-}
+import styles from '@/app/contactanos/styles.module.css';
 
 
 export default function UserRegister() {
-
-  const [serverState, sendToFormspree] = useFormspree("xnqybjrw");
   const {
-    register,
-    formState,
-    handleSubmit
+    register, 
+    handleSubmit,
+    formState
   } = useForm();
+  const [serverState, sendToFormspree] = useFormspree("mnqkjajo"); // replace
   const errors = mergeErrors(serverState.errors, formState.errors);
-  const router = useRouter();
 
-  if (serverState.submitting){
-    Swal.fire({
-      title: "Enviando comentarios",
-      icon: "info",
-      showConfirmButton: false
-    });
-  } 
   if (serverState.succeeded) {
-    Swal.close()
-      Swal.fire({
-        title: 'Se ha enviado tu comentario',
-        icon: 'success',
-        timer: 1500,
-        showConfirmButton: false
-      })
-      router.push('/')
-    }
-
-
+    return (
+      <div className="App">
+        <h1>Thanks!</h1>
+      </div>
+    );
+  }
   return (
     <article className={styles.fondo} >
 
@@ -60,7 +27,7 @@ export default function UserRegister() {
       <h3> Llená el siguiente formulario y comentanos dudas o sugerencias.</h3>
       <h3> Te contestaremos prontamente.</h3>
 
-      <form onSubmit={handleSubmit(sendToFormspree)} className={styles.formulario}>
+      <form onSubmit={handleSubmit(sendToFormspree)}>
         <label htmlFor='firstname' >Nombre y Apellido</label>
         <input
           type="text"

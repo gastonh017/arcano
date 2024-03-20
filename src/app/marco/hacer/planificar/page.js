@@ -1,8 +1,9 @@
 import TablaPlanificar from './tablaPlanificar';
+import style from '../page.module.css'
 
 export default function Planificar() {
   return (
-    <main style={{ padding: "6rem 2rem 1rem" }}>
+    <main className={style.stagesContainer}>
       <h3> Planificar a Conciencia</h3>
       <p>
         Todas las actividades de la primera etapa se realizan mediante la

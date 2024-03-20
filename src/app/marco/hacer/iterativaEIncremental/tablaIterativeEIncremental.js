@@ -1,7 +1,11 @@
 "use client"
 import Table from 'react-bootstrap/Table';
 import 'bootstrap/dist/css/bootstrap.css';
-import Lienzo from '../lienzo'
+import Lienzo from '../lienzo';
+
+
+
+
 
 const lienzos = [
   {
@@ -66,27 +70,27 @@ const lienzos = [
 export default function TablaIterativaEIncremental() {
 
   return (
-    <Table className="striped bordered responsive size='xl' ">
+    <Table striped bordered responsive size='xl'>
       <thead>
         <tr>
           <th style={{ width: '30%' }} >Objetivos</th>
           <th style={{ width: '30%' }} >Entregable</th>
-          <th>Prácticas</th>
+          <th style={{ width: '40%' }} >Prácticas</th>
         </tr>
       </thead>
       <tbody>
 
         <tr>
-          <td>Planificar la iteración</td>
+          <td style={{ backgroundColor: "#c7baf2" }}>Planificar la iteración</td>
           <td style={{ backgroundColor: "#c7baf2" }}>Repositorio de ítems de trabajo e ideas</td>
-          <td rowspan="3" style={{ padding: '5rem .5rem', backgroundColor: "#c7baf2" }}>< Lienzo data={lienzos[0]} /></td>
+          <td rowSpan="3" style={{ padding: '5rem .5rem', backgroundColor: "#c7baf2" }}>< Lienzo data={lienzos[0]} /></td>
         </tr>
         <tr>
           <td>Gestionar los impedimentos</td>
           <td>Impedimento registrado en el lienzo de visualización del trabajo</td>
         </tr>
         <tr>
-          <td>Recibir retroalimentación de los actores impactados</td>
+          <td style={{ backgroundColor: "#c7baf2" }}>Recibir retroalimentación de los actores impactados</td>
           <td style={{ backgroundColor: "#c7baf2" }} >Retroalimentación de los actores impactados por la implementación de la guía</td>
         </tr>
 
@@ -96,7 +100,7 @@ export default function TablaIterativaEIncremental() {
           <td>< Lienzo data={lienzos[1]} /></td>
         </tr>
         <tr>
-          <td>Definir rutinas de trabajo con foco en la cultura de la calidad</td>
+          <td style={{ backgroundColor: "#c7baf2" }}>Definir rutinas de trabajo con foco en la cultura de la calidad</td>
           <td style={{ backgroundColor: "#c7baf2" }} >Rutinas, procedimientos y estándares de calidad</td>
           <td style={{ backgroundColor: "#c7baf2" }} >
             <Lienzo data={lienzos[2]} />

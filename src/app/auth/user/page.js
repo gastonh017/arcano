@@ -6,7 +6,7 @@ import { signOut } from 'next-auth/react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Swal from 'sweetalert2';
-import styles from '@/app/auth/user/styles.module.css';
+import styles from '@/app/auth/styles.module.css';
 
 
 export default function UserRegister() {
@@ -108,9 +108,6 @@ export default function UserRegister() {
 
   return (
     <article className={styles.fondo} >
-
-
-      <section>
 
         {Object.keys(user).length === 0 && <h3>Cargando usuario...</h3>}
 
@@ -225,7 +222,7 @@ export default function UserRegister() {
               }
               {editUser && editPassword &&
                 <>
-                                  <div>
+                  <div>
                     <button
                       className={styles.submitbutton}
                       onClick={() => setEditPassword(false)}
@@ -297,7 +294,6 @@ export default function UserRegister() {
                 </>
               }
 
-
               <label htmlFor='avatar' className={styles.contentImageAvatar}>
                 <p>Avatar</p>
                 <Image
@@ -344,7 +340,7 @@ export default function UserRegister() {
 
               <article className={styles.buttonsContainer}>
                 {!editUser &&
-                  <div>
+                  <>
                     <Link
                       href={'/'}
                       className={styles.submitbutton}
@@ -353,10 +349,10 @@ export default function UserRegister() {
                       className={styles.submitbutton}
                       onClick={(e) => setEditUser(true)}
                     >Editar</button>
-                  </div>
+                  </>
                 }
                 {editUser &&
-                  <div>
+                  <>
                     <button className={styles.submitbutton} >Guardar</button>
                     <button
                       className={styles.submitbutton}
@@ -366,7 +362,7 @@ export default function UserRegister() {
                       }
                       }
                     >Salir</button>
-                  </div>
+                  </>
                 }
               </article>
 
@@ -374,8 +370,6 @@ export default function UserRegister() {
             </form>
           </>
         }
-      </section>
-
     </article>
   )
 }

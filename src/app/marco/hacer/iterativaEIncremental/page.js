@@ -1,8 +1,9 @@
-import Tabla from './tablaIterativeEIncremental'
+import Tabla from './tablaIterativeEIncremental';
+import style from '../page.module.css';
 
 export default function IterativaEIncremental() {
   return (
-    <main style={{ padding: "6rem 2rem 1rem" }}>
+    <main className={style.stagesContainer}>
       <h3> Hacer en Forma Iterativa e Incremental</h3>
       <p>
         En base al desafío acordado en la etapa <i><b>Planificar a Conciencia</b></i> se lleva a cabo plan de

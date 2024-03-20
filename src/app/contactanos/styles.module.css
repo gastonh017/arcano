@@ -1,7 +1,7 @@
 .fondo {
   padding: 1rem;
   padding-top: 6rem;
-  background-color: #7dd0be;
+  background-color: rgba(75, 67, 57, 0.699);
   min-height: 70vh;
   color: white;
   display: flex;
@@ -11,8 +11,7 @@
 }
 
 .title {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 1rem;
 }
 
@@ -27,13 +26,11 @@
 .formulario>label {
   padding-top: 2rem;
   font-size: 1.2rem;
-  font-weight: 600;
   color: rgb(159, 194, 1);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: white;
 }
 
-.formulario>input {
+.formulario>input,
+.comentarios {
   margin: 0.5rem 0 .25rem 0;
   background-color: aliceblue;
   color: rgba(75, 67, 57, 0.9);
@@ -42,8 +39,8 @@
   font-weight: 600;
   width: 300px;
   padding: 8px;
-  border: 2px solid #e9cfa2;
-  border-radius: 5px;
+  border: none;
+  border-radius: 3px;
 }
 
 .formulario>div {
@@ -52,26 +49,21 @@
 }
 
 .submitbutton {
-  width: 50%;
   padding: .5rem 1.5rem;
   margin: .5rem;
   font-size: 1rem;
-  color: white;
-  background-color:#9475f8;
+  font-family: inherit;
+  color: rgba(75, 67, 57, 0.699);
+  background-color: rgb(235, 214, 255);
   border: none;
   border-radius: 2rem;
   text-decoration: none;
-  cursor: pointer;
-  transition: all 100ms ease-in-out;
+  cursor: pointer
 }
 
-/* --colorViolet01:'#794dff';
---colorViolet02:'#c7baf2';
---colorViolet03:'#dfd7f7'; */
-
 .submitbutton:hover {
-  background-color: #794dff;
-  color:aliceblue;
+  background-color: rgb(145, 145, 145);
+  color: rgba(17, 16, 14, 0.89);
 }
 
 
@@ -100,7 +92,7 @@
   border-radius: 50%;
   margin: .5rem 0 1rem;
   width: auto;
-  /* max-width: 25vw; */
+  max-width: 25vw;
   cursor: pointer;
 }
 
