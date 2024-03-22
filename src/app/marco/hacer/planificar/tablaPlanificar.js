@@ -82,17 +82,17 @@ const lienzos = [
 export default function TablaPlanificar() {
 
   return (
-    <Table className="striped bordered responsive size='xl'" >
+    <Table striped bordered responsive size='xl' >
       <thead>
         <tr>
           <th style={{ width: '30%' }} >Objetivos</th>
           <th style={{ width: '30%' }} >Entregable</th>
-          <th>Prácticas</th>
+          <th style={{ width: '40%' }} >Prácticas</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Socializar el contenido de la guia y realizar acuerdo de trabajo para su implementación</td>
+          <td style={{backgroundColor:"#e9cfa2"}} >Socializar el contenido de la guia y realizar acuerdo de trabajo para su implementación</td>
           <td style={{backgroundColor:"#e9cfa2"}} >Taller de Socialización y Acuerdos de Trabajo</td>
           <td style={{backgroundColor:"#e9cfa2"}} >
             <p style={{margin: ".1rem .5rem"}} >Pautas para facilitar el taller de sensibilización</p>
@@ -106,7 +106,7 @@ export default function TablaPlanificar() {
           <td>< Lienzo data={lienzos[2]} /></td>
         </tr>
         <tr>
-          <td>Nivelacion de Habilidades en Calidad</td>
+          <td style={{backgroundColor:"#e9cfa2"}} >Nivelacion de Habilidades en Calidad</td>
           <td style={{backgroundColor:"#e9cfa2"}} >Taller de capacitación en Calidad</td>
           <td style={{backgroundColor:"#e9cfa2"}} >
             <p style={{margin: ".1rem .5rem"}} >Taller de capacitación </p>
@@ -118,7 +118,7 @@ export default function TablaPlanificar() {
           <td>< Lienzo data={lienzos[3]} /></td>
         </tr>
         <tr>
-          <td>Identificar Habilidades ciudadanas a desarrollar</td>
+          <td style={{backgroundColor:"#e9cfa2"}} >Identificar Habilidades ciudadanas a desarrollar</td>
           <td style={{backgroundColor:"#e9cfa2"}} >Habilidades ciudadanas a desarrollar</td>
           <td style={{backgroundColor:"#e9cfa2"}} >< Lienzo data={lienzos[4]} /></td>
         </tr>
@@ -128,7 +128,7 @@ export default function TablaPlanificar() {
           <td>< Lienzo data={lienzos[5]} /></td>
         </tr>
         <tr>
-          <td>Definir Objetivos y Resultados esperados</td>
+          <td style={{backgroundColor:"#e9cfa2"}} >Definir Objetivos y Resultados esperados</td>
           <td style={{backgroundColor:"#e9cfa2"}} > Objetivos y Resultados esperados y experiencia formativa</td>
           <td style={{backgroundColor:"#e9cfa2"}} >
             < Lienzo data={lienzos[6]} />

@@ -33,19 +33,19 @@ const lienzosVerificar = [
 function TablaVerificar() {
 
   return (
-    <Table className="striped bordered responsive size='xl' ">
+    <Table striped bordered responsive>
       <thead>
         <tr>
-        <th style={{ width: '30%' }} >Objetivos</th>
+          <th style={{ width: '30%' }} >Objetivos</th>
           <th style={{ width: '30%' }} >Entregable</th>
-          <th>Prácticas</th>
+          <th style={{ width: '40%' }} >Prácticas</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Realizar Rúbrica de Madurez</td>
-          <td style={{backgroundColor:"#f6e0e0"}} >Nivel de madurez en el desarrollo de habilidades</td>
-          <td style={{backgroundColor:"#f6e0e0"}} >
+          <td style={{ backgroundColor: "#f6e0e0" }} >Realizar Rúbrica de Madurez</td>
+          <td style={{ backgroundColor: "#f6e0e0" }} >Nivel de madurez en el desarrollo de habilidades</td>
+          <td style={{ backgroundColor: "#f6e0e0" }} >
             < Lienzo data={lienzosVerificar[0]} />
           </td>
         </tr>
@@ -55,11 +55,11 @@ function TablaVerificar() {
           <td>< Lienzo data={lienzosVerificar[1]} /></td>
         </tr>
         <tr>
-          <td>Realizar Eventos de Mejora Continua</td>
-          <td style={{backgroundColor:"#f6e0e0"}} >Iniciativas de mejoras priorizadas</td>
-          <td style={{backgroundColor:"#f6e0e0"}} >< Lienzo data={lienzosVerificar[2]} /></td>
+          <td style={{ backgroundColor: "#f6e0e0" }} >Realizar Eventos de Mejora Continua</td>
+          <td style={{ backgroundColor: "#f6e0e0" }} >Iniciativas de mejoras priorizadas</td>
+          <td style={{ backgroundColor: "#f6e0e0" }} >< Lienzo data={lienzosVerificar[2]} /></td>
         </tr>
-        
+
       </tbody>
     </Table>
   );

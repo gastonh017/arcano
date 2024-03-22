@@ -16,7 +16,7 @@
 --color11:'#e9f3f3'
 */
 
-/* -------------- principal ------------------ */
+/* -------------- Principal para la seccion Hacer ------------------ */
 .mainHacer {
   padding: 6rem 1rem 4rem;
   color: #333;
@@ -51,21 +51,21 @@
 
 
 /* ---------------  secciones ------------ */
-.stepsSection > h3,
-.planningSection >h3 {
+.stagesSection > h3,
+.stagesDescriptionSection >h3 {
   font-size: 2.2rem;
   padding: 1rem 0 2rem;
 }
 
-.stepsSection >p,
-.planningSection >p {
+.stagesSection >p,
+.stagesDescriptionSection >p {
   font-size: 1.5rem;
   padding: 0 2rem 1rem;
 }
 
 
 /* ---------------- cards ------------ */
-.stepsCardsContainer{
+.stagesCardsContainer{
   padding: 1rem 0rem;
   display: flex;
   flex-flow: row wrap;
@@ -129,7 +129,19 @@
   height: 252px;
 }
 
-/* -------------- lienzos -------------------- */
+/* -------------- Estilos para cada Etapa de la seccion Hacer ------------------ */
+/* ---------- Para en main ---------- */
+.stagesContainer{
+  padding: 6rem 0 1rem;
+}
+
+.stagesContainer > h3,
+.stagesContainer > p {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* ---------- lienzos ---------- */
 .lienzContainer{
   margin: .1rem .5rem;
   display: flex;
@@ -142,22 +154,22 @@
 }
 
 .parametrosContainer {
-  margin: 3rem 0;
+  margin: 1rem 0;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: space-around;
 }
 
 .parametros{
-  width: 18%;
+  width: 70%;
   min-height: 6rem;
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
   border-radius: 10px;
 }
 
-/* botones de lienzos */
+/* ---------- botones de lienzos ----------*/
 .btn {
   background-color: rgb(238, 255, 140);
   margin: .1rem .5rem;
@@ -177,12 +189,13 @@
 }
 
 .modalWindow {
-  height: 70vh;
-  width: max-content;
+  height: auto;
+  width: 100%;
 }
 
 .modalWindow1 {
-  height: 100%;
+  height: auto;
+  width: 100%;
 }
 
 
@@ -194,6 +207,12 @@
   .mainSer>div>h1 {
     font-size: 3rem;
   }
+
+  /* -------------- Estilos para cada Etapa de la seccion Hacer ------------------ */
+/* ---------- Para en main ---------- */
+.stagesContainer{
+  padding: 6rem 2rem 1rem;
+}
 }
 
 
@@ -233,6 +252,18 @@
     height: 180px;
     bottom: 20px;
     left: 55px;
+  }
+
+  .parametrosContainer {
+    margin: 3rem 8vw;
+    flex-flow: row wrap;
+    align-items:stretch;
+  }
+
+  .parametros{
+    width: 23%;
+    padding: 1rem;
+
   }
 }
 

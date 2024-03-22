@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Swal from 'sweetalert2';
-import styles from '@/app/auth/register/styles.module.css';
+import styles from '@/app/auth/styles.module.css';
 
 
 export default function UserRegister() {

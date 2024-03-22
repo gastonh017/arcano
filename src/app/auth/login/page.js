@@ -4,8 +4,8 @@ import { signIn } from 'next-auth/react';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import Swal from 'sweetalert2';
-import styles from '@/app/auth/login/styles.module.css';
-//import Image from 'next/image'
+import styles from '@/app/auth/styles.module.css';
+//import styles from '@/app/auth/login/styles.module.css';
 
 
 export default function UserLogin() {

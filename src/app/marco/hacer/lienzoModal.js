@@ -12,7 +12,7 @@ function LienzoModal({ handleClose, show, dataLienzo }) {
       <Modal
         show={show}
         onHide={handleClose}
-        backdrop="static"
+        backdrop= 'true'
         keyboard={false}
         
         size="lg"
