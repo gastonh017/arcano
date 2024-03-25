@@ -23,7 +23,7 @@ function mergeErrors(formspreeErrors, otherErrors = {}) {
 }
 
 
-export default function UserRegister() {
+export default function ContactUs() {
 
   const [serverState, sendToFormspree] = useFormspree("xnqybjrw");
   const {
