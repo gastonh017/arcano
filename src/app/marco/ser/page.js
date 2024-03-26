@@ -67,7 +67,7 @@ export default function Protagonistas() {
   return (
     
     <main className={styles.mainSer}>
-      <h1 style={{marginBottom: '0.5rem'}}>Protagonistas y Valores</h1>
+      <h1 style={{marginBottom: '2rem'}}>Protagonistas y Valores</h1>
       <h2>Protagonistas</h2>
       <div className={styles.stepsCardsContainer}>
     { protaInfo.map((data,id) => 
@@ -79,7 +79,7 @@ export default function Protagonistas() {
       height: '15rem'
     }} > 
     <h3 style={{ color: `${data.colorText}`, textAlign: 'center', padding: '0.5rem' }}>{data.title}</h3>
-    <p style={{ color: `${data.colorText}`, textAlign: 'justify', padding: '0.2rem'}}>{data.description}</p>
+    <p style={{ color: `${data.colorText}`, textAlign: 'justify', padding: '0.6rem'}}>{data.description}</p>
     </div>
     
     )

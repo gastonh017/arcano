@@ -16,13 +16,20 @@
 --color11:'#e9f3f3'
 */
 .mainNosotros {
- background-color:#f6e0e0;
+  padding: 6rem 1rem 4rem;
+  color: #333;
+  background-color: #fff;
 }
 
 .titulo {
   padding: 1rem 1rem 2rem;
   color: #333;
-  background-color: #f6e0e0;
+  font-size: 2.5rem;
+}
+
+.tituloSecundario {
+  padding: 1rem 1rem 2rem;
+  color: #333;
   font-size: 2.5rem;
 }
 
